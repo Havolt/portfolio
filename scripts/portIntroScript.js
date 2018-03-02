@@ -1,4 +1,4 @@
-
+let introData = {logoMF : true}
 
 function createStars(amt, size){
     for(let i = 0; i < amt; i++){
@@ -23,6 +23,22 @@ function moveStars(size){
     }
 }
 
+function changeLogo(bool){
+    let logoTimer = 50;
+    let symbols = ['A', '$', '4', 'R', '8', '$', '?', 'L', 'S', '2', '7', 'T'];
+    for(let i = 0; i < symbols.length; i++){
+        setTimeout(function(){document.getElementsByClassName('intLogoDiv')[0].innerHTML= symbols[i]+symbols[symbols.length-i-1]+''}, logoTimer)
+        logoTimer+= 50;
+        if(i == symbols.length-1){
+            if(bool){
+                setTimeout(function(){document.getElementsByClassName('intLogoDiv')[0].innerHTML= 'JS'}, logoTimer);
+                introData.logoMF = false;
+            }else{setTimeout(function(){document.getElementsByClassName('intLogoDiv')[0].innerHTML= 'MF'}, logoTimer); introData.logoMF = true;}
+        }
+    }
+    
+}
+
 function moveAll(){
     moveStars('Small');
     moveStars('Medium');
@@ -34,16 +50,18 @@ function moveAll(){
 (function initIntroSec(){
     creEl('div', ['introDiv', 'sectionMainDiv'], 'site', 0,);
     creEl('div', 'intLogoDiv', 'introDiv', 0, 'MF');
-    creEl('div', 'intText', 'introDiv', 0 , "Hi, I'm Mark. I am a Front End Web Developer.");
+    creEl('div', 'intText', 'introDiv', 0 , "Hi, I'm Mark. A Front End Web Developer.");
     creEl('div', 'intButton', 'introDiv', 0, 'GET IN TOUCH');
     creEl('div', 'intMoreContain', 'introDiv', 0);
     creEl('div', 'intMoreText', 'intMoreContain', 0, 'Tell me more');
     creEl('div', 'intMoreArrow', 'intMoreContain', 0, '<i class="fa fa-angle-down"></i>');
-    createStars(18, 'Small');
-    createStars(8, 'Medium');
+    createStars(20, 'Small');
+    createStars(9, 'Medium');
     createStars(3, 'Large');
 
     setTimeout(function(){
         moveAll();
     }, 600)
+
+    document.getElementsByClassName('intLogoDiv')[0].addEventListener('click', function(){changeLogo(introData.logoMF)})
 })()
