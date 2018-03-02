@@ -1,3 +1,29 @@
 .aboutDiv{
     background: #f2f2f2;
+    overflow: auto;
+}
+
+.aboutTitle{
+    margin-top: 40px;
+    font-size: 2.1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.aboutParagraph{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.aboutProfilePic{
+    width: 48%;
+    margin: 40px auto 0 auto;
+}
+
+.aboutPPImg{
+    border-radius: 5px;
+    width: 100%;
 }
