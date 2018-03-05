@@ -1,4 +1,4 @@
-let introData = {logoMF : true}
+let introData = {logoMF : true }
 
 function createStars(amt, size){
     for(let i = 0; i < amt; i++){
@@ -16,9 +16,9 @@ function moveStars(size){
         let nextXPos = document.getElementsByClassName('intStar'+size)[i].style.left;
         nextXPos = nextXPos.split('%')[0];
         if(nextXPos < 0){nextXPos = 101}
-        if(size == 'Small'){nextXPos -= 0.25;}
-        if(size == 'Medium'){nextXPos -= 0.4;}
-        if(size == 'Large'){nextXPos -= 0.7;}
+        if(size == 'Small'){nextXPos -= 0.1;}
+        if(size == 'Medium'){nextXPos -= 0.2;}
+        if(size == 'Large'){nextXPos -= 0.4;}
         document.getElementsByClassName('intStar'+size)[i].style.left = nextXPos + '%';
     }
 }
@@ -36,14 +36,13 @@ function changeLogo(bool){
             }else{setTimeout(function(){document.getElementsByClassName('intLogoDiv')[0].innerHTML= 'MF'}, logoTimer); introData.logoMF = true;}
         }
     }
-    
 }
 
 function moveAll(){
     moveStars('Small');
     moveStars('Medium');
     moveStars('Large');
-    setTimeout(function(){moveAll()}, 600)
+    setTimeout(function(){moveAll()}, 300)
 }
 
 
@@ -55,9 +54,9 @@ function moveAll(){
     creEl('div', 'intMoreContain', 'introDiv', 0);
     creEl('div', 'intMoreText', 'intMoreContain', 0, 'Tell me more');
     creEl('div', 'intMoreArrow', 'intMoreContain', 0, '<i class="fa fa-angle-down"></i>');
-    createStars(20, 'Small');
-    createStars(9, 'Medium');
-    createStars(3, 'Large');
+    createStars(28, 'Small');
+    createStars(12, 'Medium');
+    createStars(4, 'Large');
 
     setTimeout(function(){
         moveAll();
