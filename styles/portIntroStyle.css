@@ -18,6 +18,7 @@
     font-weight: bold;
     position: relative;
     z-index: 10;
+    user-select: none;
 }
 
 .intText{
@@ -27,17 +28,30 @@
     margin: 30vh auto 0 auto;
     vertical-align: middle;
     text-align: center;
+    user-select: none;
 }
 
 .intButton{
-    border: 2px solid rgb(57, 107, 187);
-    padding: 6px 4px;
+    border-left: 2px solid #6173da;
+    border-top: 2px solid #6173da;
+    border-bottom: 2px solid #3c4ca7;
+    border-bottom: 2px solid #3c4ca7;
+    padding: 8px 8px;
     color: white;
     font-size: 1.6em;
     width: fit-content;
     margin: 6vh auto 0 auto;
     border-radius: 4px;
-    background: #4a59ad;
+    background: rgb(57, 107, 187) ;
+}
+
+.intButton:hover{
+    border-left: 2px solid #3c4ca7 ; 
+    border-top: 2px solid #3c4ca7;
+    border-bottom: 2px solid #6173da;
+    border-bottom: 2px solid #6173da;
+    text-shadow: -1px -2px 1px rgb(47, 86, 150) ;
+    cursor: pointer;
 }
 
 .intMoreContain{
@@ -47,16 +61,21 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+    color: #dfdfdf;
+}
+
+.intMoreContain:hover{
+    cursor: pointer;
+    color: white;
 }
 
 .intMoreText{
-    color: #dfdfdf;
-    font-size: 1.4em;
-    margin-bottom: -8px;
+    font-size: 1.5em;
+    margin-bottom: -5px;
 }
 
+
 .intMoreArrow{
-    color: #dfdfdf;
     margin: 0 auto;
     text-align: center;
     font-size: 1.8em;

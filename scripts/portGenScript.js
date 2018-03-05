@@ -2,7 +2,6 @@
 
 function scrollToAbout(height){
     let scrollRunner = window.scrollY;
-    console.log(scrollRunner)
     if(window.scrollY < height){
         window.scrollTo(0, scrollY + 30);
         setTimeout(function(){scrollToAbout(height)}, 30)

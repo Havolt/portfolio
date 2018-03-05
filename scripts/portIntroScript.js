@@ -42,7 +42,7 @@ function moveAll(){
     moveStars('Small');
     moveStars('Medium');
     moveStars('Large');
-    setTimeout(function(){moveAll()}, 300)
+    setTimeout(function(){moveAll()}, 200)
 }
 
 
@@ -54,8 +54,8 @@ function moveAll(){
     creEl('div', 'intMoreContain', 'introDiv', 0);
     creEl('div', 'intMoreText', 'intMoreContain', 0, 'Tell me more');
     creEl('div', 'intMoreArrow', 'intMoreContain', 0, '<i class="fa fa-angle-down"></i>');
-    createStars(28, 'Small');
-    createStars(12, 'Medium');
+    createStars(32, 'Small');
+    createStars(14, 'Medium');
     createStars(4, 'Large');
 
     setTimeout(function(){
