@@ -1,8 +1,8 @@
-function createAboutListItem(listItemName, iconHL, titleHL){
+function createAboutListItem(listItemName, iconHL, titleHL, paraHL){
     creEl('div', ['aboutListItem', 'abl'+listItemName], 'aboutListContain', 0);
-    creEl('div', ['aboutListContainIcon', 'abli'+listItemName], 'abl'+listItemName, 0, iconHL);
-    creEl('div', ['aboutListTitle', 'ablt'+listItemName], 'abl'+listItemName, 0, 'Responsive Design');
-    creEl('div', ['aboutListParagraph', 'ablp'+listItemName], 'abl'+listItemName, 0, 'I put a strong focus on creating responsive websites to fit all screen sizes and types. I build from the ground up to fit mobile first design practices and make beautiful websites from the ground up.');
+    creEl('div', ['aboutListIcon', 'abli'+listItemName], 'abl'+listItemName, 0, iconHL);
+    creEl('div', ['aboutListTitle', 'ablt'+listItemName], 'abl'+listItemName, 0, titleHL );
+    creEl('div', ['aboutListParagraph', 'ablp'+listItemName], 'abl'+listItemName, 0, paraHL);
 }
 
 (function initAboutSec(){
@@ -15,6 +15,7 @@ function createAboutListItem(listItemName, iconHL, titleHL){
     creEl('img', 'aboutPPImg', 'aboutProfilePic', 0, '', '', 'images/pp1.jpg');
 
     creEl('div', 'aboutListContain', 'aboutDiv', 0);
-    createAboutListItem('responsive', '<i class="fa fa-mobile"></i>');
+    createAboutListItem('Responsive', '<i class="fa fa-mobile"></i>', 'Responsive Design', 'I put a strong focus on creating responsive websites to fit all screen sizes and types. I build from the ground up to fit mobile first design practices and make beautiful websites from the ground up.');
+    createAboutListItem('Code', '<i class="fa fa-code"></i>', 'Programming Skills', 'I have a'  )
     
 })()

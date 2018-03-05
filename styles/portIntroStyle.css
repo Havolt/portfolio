@@ -1,7 +1,7 @@
 .introDiv{
     height: 100vh;
     background: linear-gradient(to bottom , #222222, #555555);
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .intLogoDiv{

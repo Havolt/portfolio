@@ -3,6 +3,10 @@
     overflow: auto;
 }
 
+.aboutIntro{
+    margin-bottom: 50px;
+}
+
 .aboutTitle{
     margin-top: 40px;
     font-size: 2.1em;
@@ -26,4 +30,32 @@
 .aboutPPImg{
     border-radius: 5px;
     width: 100%;
+}
+
+.aboutListItem{
+    margin-bottom: 40px;
+}
+
+.aboutListIcon{
+    font-size: 6.2em;
+    text-align: center;
+    color: rgb(57, 107, 187);
+}
+
+.aboutListTitle{
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutListParagraph{
+    font-size: 1.1em;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.abliCode{
+    font-size: 4.8em;
 }
