@@ -2,3 +2,38 @@
     background: #ededed;
 }
 
+
+.projectItem{
+    width: 80%;
+    margin: 40px auto 0 auto;
+    position: relative;
+}
+
+
+
+.projectItemImgTetris{
+    background: url("../images/proj-tetris.png");
+}
+
+.projectItemImg{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    height: 0;
+    padding-top: 58.82%;
+    background-size: cover;
+}
+
+.projectItemImgOver{
+    width: 100%;
+    padding-top: 58.82%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.projectIIOTetris{
+    background: rgba(12, 143, 12, 0.603);
+}
