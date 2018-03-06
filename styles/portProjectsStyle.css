@@ -19,6 +19,10 @@
     background: url("../images/proj-checkers.png");
 }
 
+.projectItemImgTo-Do{
+    background: url("../images/proj-todo.png");
+}
+
 .projectItemImg{
     width: 100%;
     height: auto;
@@ -39,7 +43,6 @@
     border-radius: 10px;
     background: rgba(12, 112, 143, 0.7);
 }
-
 
 
 .projectItemImgOverTitle{
