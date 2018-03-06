@@ -15,6 +15,10 @@
     background: url("../images/proj-tetris.png");
 }
 
+.projectItemImgCheckers{
+    background: url("../images/proj-checkers.png");
+}
+
 .projectItemImg{
     width: 100%;
     height: auto;
@@ -33,15 +37,13 @@
     top: 0;
     z-index: 2;
     border-radius: 10px;
-}
-
-.projectIIOTetris{
     background: rgba(12, 112, 143, 0.7);
 }
 
+
+
 .projectItemImgOverTitle{
     position: absolute;
-    
     color: white;
     font-size: 3em;
     top: 34%;
@@ -51,13 +53,19 @@
     margin: auto;
 }
 
-.projectIIOTTetris{
+.projectItemImgOverTitle > i{
+    font-size: 0.75em;
+}
+
+.projectItemImgOverTitle{
     font-family: monospace;
 }
 
-.projectIIOTTetris > i{
-    font-size: 0.75em;
+.projectIIOTCheckers > i{
+    font-size: 0.65em;
 }
+
+
 
 .projectItemDesc{
     width: 80%;
