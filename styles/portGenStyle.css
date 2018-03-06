@@ -13,3 +13,18 @@ html, body{
 .sectionAboutDiv{
     width: 100vw;
 }
+
+.sectionTitle{
+    padding-top: 40px;
+    font-size: 2.1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sectionParagraph{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.3em;
+    text-align: center;
+}

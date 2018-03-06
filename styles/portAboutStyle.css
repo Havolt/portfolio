@@ -1,5 +1,5 @@
 .aboutDiv{
-    background: #f2f2f2;
+    background: #f8f8f8;
     overflow: auto;
 }
 
@@ -7,12 +7,6 @@
     margin-bottom: 50px;
 }
 
-.aboutTitle{
-    margin-top: 40px;
-    font-size: 2.1em;
-    text-align: center;
-    font-weight: bold;
-}
 
 .aboutParagraph{
     width: 85%;
