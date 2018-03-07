@@ -22,5 +22,5 @@ function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
 
     creEl('div', 'projectMore', 'projectDiv', 0);
     creEl('div', 'projectMoreText', 'projectMore', 0, 'If you would like to view more of my work please use the following link:');
-    creEl('div', 'projectMoreButton', 'projectMore', 0, 'View More');
+    creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'View More');
 })()

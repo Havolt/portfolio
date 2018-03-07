@@ -1,0 +1,26 @@
+.contactDiv{
+    background: #f8f8f8;
+}
+
+.contactContain{
+    width: 86%;
+    margin: 40px auto 0 auto;
+}
+
+.contactTitle{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.contactPara{
+    text-align: center;
+    font-size: 0.9em;
+    color: rgb(58, 58, 58);
+}
+
+.contactButton{
+    margin: 20px auto 0 auto;
+    padding: 4px 30px;
+}

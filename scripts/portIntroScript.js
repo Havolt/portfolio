@@ -50,7 +50,7 @@ function moveAll(){
     creEl('div', ['introDiv', 'sectionMainDiv'], 'site', 0,);
     creEl('div', 'intLogoDiv', 'introDiv', 0, 'MF');
     creEl('div', 'intText', 'introDiv', 0 , "Hi, I'm Mark. A Front End Web Developer.");
-    creEl('div', 'intButton', 'introDiv', 0, 'GET IN TOUCH');
+    creEl('div', ['portButton','intButton'], 'introDiv', 0, 'GET IN TOUCH');
     creEl('div', 'intMoreContain', 'introDiv', 0);
     creEl('div', 'intMoreText', 'intMoreContain', 0, 'Tell me more');
     creEl('div', 'intMoreArrow', 'intMoreContain', 0, '<i class="fa fa-angle-down"></i>');
