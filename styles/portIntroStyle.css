@@ -44,6 +44,7 @@
     right: 0;
     margin: 0 auto;
     color: #dfdfdf;
+    user-select: none;
 }
 
 .intMoreContain:hover{
@@ -53,7 +54,7 @@
 
 .intMoreText{
     font-size: 1.5em;
-    margin-bottom: -5px;
+    margin-bottom: -12px;
 }
 
 

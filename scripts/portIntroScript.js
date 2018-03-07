@@ -1,4 +1,4 @@
-let introData = {logoMF : true, arrowRotateNum : 0 }
+let introData = {logoMF : true, arrowRotateNum : 0, textJumpNum : 0, textJumpDir : -2 }
 
 function createStars(amt, size){
     for(let i = 0; i < amt; i++){
@@ -50,10 +50,28 @@ function rotateArrow(arrow){
     introData.arrowRotateNum =  introData.arrowRotateNum + 12;
     if(introData.arrowRotateNum > 180){
         introData.arrowRotateNum = 0;
-        setTimeout(function(){rotateArrow(arrow)}, 1080)
+        setTimeout(function(){rotateArrow(arrow);}, 1480)
+    }
+    else if(introData.arrowRotateNum > 89 && introData.arrowRotateNum < 100){
+        setTimeout(function(){rotateArrow(arrow); textJump(document.getElementsByClassName('intMoreText')[0])}, 180)
     }
     else{
         setTimeout(function(){rotateArrow(arrow)}, 180)
+    }
+}
+
+function textJump(text){
+
+    introData.textJumpNum = introData.textJumpNum + introData.textJumpDir;
+    text.style.transform = "translateY("+introData.textJumpNum+"px)";
+
+    if(introData.textJumpNum == 0){introData.textJumpDir = -introData.textJumpDir }
+    else if(introData.textJumpNum < 1 && introData.textJumpNum > -3){
+        setTimeout(function(){textJump(text)}, 80);
+    }
+    else{
+        introData.textJumpDir = -introData.textJumpDir;
+        setTimeout(function(){textJump(text)}, 80);
     }
 }
 
@@ -74,7 +92,7 @@ function rotateArrow(arrow){
         moveAll();
     }, 180)
 
-    rotateArrow( document.getElementsByClassName('intMoreArrow')[0]);
+    rotateArrow( document.getElementsByClassName('intMoreArrow')[0] );
 
 
     document.getElementsByClassName('intLogoDiv')[0].addEventListener('click', function(){changeLogo(introData.logoMF)})
