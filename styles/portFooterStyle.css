@@ -4,8 +4,12 @@
 }
 
 .footerLinksDiv{
-    margin: 5vh auto 0 auto;
     width: fit-content;
+    margin: 10vh auto 0 auto;
+}
+
+.footerLink{
+    margin: 0 6px 0 6px;
     color: white;
     border-radius: 50%;
     background: rgb(43, 43, 43);
@@ -13,6 +17,16 @@
     height: 28px;
     text-align: center;
     box-shadow: 0 0 1px rgb(153, 153, 153);
+    vertical-align: top;
+}
+
+.footerLink:hover{
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.footerLink{
+    display: inline-block;
 }
 
 .footerLinkLinkedin{
@@ -20,13 +34,33 @@
     padding-top: 4px;
 }
 
+.footerLinkTwitter{
+    height: 22px;
+    padding-top: 6px;
+}
+
+.footerLinkGithub{
+    height: 27px;
+    padding-top: 1px;
+    font-size: 1.4em;
+}
+
 .footerLinkLinkedin:hover{
     background: #0274B3;
-    border-radius: 50%;
+}
+
+.footerLinkTwitter:hover{
+    background: #1DA1F2;
+}
+
+.footerLinkGithub:hover{
+    color: rgb(43, 43, 43);
+    background: white;
 }
 
 .copyrightDiv{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 18px;
+    padding-bottom: 46px;
     color: rgb(199, 199, 199);
 }
