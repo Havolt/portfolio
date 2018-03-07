@@ -1,4 +1,4 @@
-let introData = {logoMF : true }
+let introData = {logoMF : true, arrowRotateNum : 0 }
 
 function createStars(amt, size){
     for(let i = 0; i < amt; i++){
@@ -42,7 +42,19 @@ function moveAll(){
     moveStars('Small');
     moveStars('Medium');
     moveStars('Large');
-    setTimeout(function(){moveAll()}, 200)
+    setTimeout(function(){moveAll()}, 180)
+}
+
+function rotateArrow(arrow){
+    arrow.style.transform = "rotateY("+introData.arrowRotateNum+"deg)";
+    introData.arrowRotateNum =  introData.arrowRotateNum + 12;
+    if(introData.arrowRotateNum > 180){
+        introData.arrowRotateNum = 0;
+        setTimeout(function(){rotateArrow(arrow)}, 1080)
+    }
+    else{
+        setTimeout(function(){rotateArrow(arrow)}, 180)
+    }
 }
 
 
@@ -60,7 +72,10 @@ function moveAll(){
 
     setTimeout(function(){
         moveAll();
-    }, 600)
+    }, 180)
+
+    rotateArrow( document.getElementsByClassName('intMoreArrow')[0]);
+
 
     document.getElementsByClassName('intLogoDiv')[0].addEventListener('click', function(){changeLogo(introData.logoMF)})
 })()

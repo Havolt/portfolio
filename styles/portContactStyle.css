@@ -4,7 +4,7 @@
 
 .contactContain{
     width: 86%;
-    margin: 40px auto 0 auto;
+    margin: 40px auto 50px auto;
 }
 
 .contactTitle{
@@ -21,6 +21,6 @@
 }
 
 .contactButton{
-    margin: 20px auto 0 auto;
+    margin: 40px auto 0 auto;
     padding: 4px 30px;
 }

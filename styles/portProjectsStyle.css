@@ -79,9 +79,11 @@
 }
 
 .projectMore{
+    border-top: 1px solid rgb(209, 209, 209);
+    padding-top: 30px;
     margin-top: 40px;
     width: 90%;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
     text-align: center;
     padding-bottom: 40px;
 }
