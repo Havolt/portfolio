@@ -4,7 +4,6 @@ function showContact(sec){
     if(contactData.ccBlueTopMove){contactData.ccBlueTopMove = false;}
     contactData.ccBlueTopPos = contactData.ccBlueTopPos + contactData.ccBlueTopDir;
     sec.style.top = contactData.ccBlueTopPos + '%';
-    console.log(contactData.ccBlueTopPos)
     if(contactData.ccBlueTopPos < 0 &&  contactData.ccBlueTopPos > -101){
         setTimeout(function(){showContact(sec)}, 18)
     }
@@ -39,6 +38,7 @@ function setFormData(){
 
     creEl('div', 'contactContainBlue', 'contactDiv', 0);
     creEl('div', 'ccBlueCross', 'contactContainBlue', 0, '<i class="fa fa-times"></i>');
+    creEl('div', 'ccBlueTitle', 'contactContainBlue', 0, 'Please enter your details below and I will get back to you as soon as I can.');
     creEl('form', 'ccBlueForm', 'contactContainBlue', 0);
     creEl('input', 'ccBlueName', 'ccBlueForm', 0);
     creEl('input', 'ccBlueEmail', 'ccBlueForm', 0);
