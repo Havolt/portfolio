@@ -21,6 +21,10 @@ html, body{
     font-weight: bold;
 }
 
+.hidden{
+    display: none;
+}
+
 .sectionParagraph{
     width: 85%;
     margin: 0 auto;

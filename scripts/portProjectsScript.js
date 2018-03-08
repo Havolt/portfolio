@@ -10,7 +10,7 @@ function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
 
 
 (function initProjectSec(){
-    creEl('div', ['projectDiv', 'sectionMainDiv'], 'site', 0);
+    creEl('div', ['projectDiv', 'sectionMainDiv'], 'main', 0);
 
     creEl('div', 'projectIntro', 'projectDiv', 0);
     creEl('div', ['projectTitle', 'sectionTitle'], 'projectIntro', 0, 'Projects');

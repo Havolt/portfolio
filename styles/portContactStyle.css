@@ -7,6 +7,14 @@
     margin: 40px auto 50px auto;
 }
 
+.contactIcon{
+    font-size: 5em;
+    color: rgb(73, 73, 73);
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
 .contactTitle{
     text-align: center;
     font-size: 1.6em;
@@ -23,4 +31,8 @@
 .contactButton{
     margin: 40px auto 0 auto;
     padding: 4px 30px;
+}
+
+.contactContainBlue{
+    position: absolute;
 }

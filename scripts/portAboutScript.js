@@ -6,7 +6,7 @@ function createAboutListItem(listItemName, iconHL, titleHL, paraHL){
 }
 
 (function initAboutSec(){
-    creEl('div', ['aboutDiv', 'sectionMainDiv'], 'site', 0);
+    creEl('div', ['aboutDiv', 'sectionMainDiv'], 'main', 0);
 
     creEl('div', 'aboutIntro', 'aboutDiv', 0)
     creEl('div', ['aboutTitle', 'sectionTitle'], 'aboutIntro', 0, 'About Me');

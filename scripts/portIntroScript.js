@@ -77,7 +77,7 @@ function textJump(text){
 
 
 (function initIntroSec(){
-    creEl('div', ['introDiv', 'sectionMainDiv'], 'site', 0,);
+    creEl('div', ['introDiv', 'sectionMainDiv'], 'main', 0,);
     creEl('div', 'intLogoDiv', 'introDiv', 0, 'MF');
     creEl('div', 'intText', 'introDiv', 0 , "Hi, I'm Mark. A Front End Web Developer.");
     creEl('div', ['portButton','intButton'], 'introDiv', 0, 'GET IN TOUCH');

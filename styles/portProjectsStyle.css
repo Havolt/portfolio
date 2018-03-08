@@ -9,6 +9,10 @@
     position: relative;
 }
 
+.projectParagraph{
+    font-size: 1em;
+}
+
 
 
 .projectItemImgTetris{
@@ -90,5 +94,6 @@
 
 .projectMoreButton{
     margin: 15px auto 0 auto;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    padding: 2px 24px;
 }

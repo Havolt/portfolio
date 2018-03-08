@@ -6,7 +6,7 @@ function createFooterLink(linkName,  inHL, linkDestination){
 }
 
 (function initFooterSec(){
-    creEl('div', ['footerDiv', 'sectionMainDiv'], 'site', 0);
+    creEl('div', ['footerDiv', 'sectionMainDiv'], 'main', 0);
 
     creEl('div', 'footerLinksDiv', 'footerDiv', 0);
     createFooterLink('Linkedin', 'linkedin', 'https://www.linkedin.com/in/mark-fitzpatrick-491419100/');
