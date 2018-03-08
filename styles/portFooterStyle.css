@@ -13,8 +13,8 @@
     color: white;
     border-radius: 50%;
     background: rgb(43, 43, 43);
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     text-align: center;
     box-shadow: 0 0 1px rgb(153, 153, 153);
     vertical-align: top;
@@ -27,22 +27,35 @@
 
 .footerLink{
     display: inline-block;
+    font-size: 1.1em;
 }
 
 .footerLinkLinkedin{
-    height: 24px;
-    padding-top: 4px;
+    height: 27px;
+    padding-top: 5px;
 }
 
 .footerLinkTwitter{
-    height: 22px;
-    padding-top: 6px;
+    height: 25px;
+    padding-top: 7px;
 }
 
 .footerLinkGithub{
-    height: 27px;
-    padding-top: 1px;
+    height: 29px;
+    padding-top: 3px;
     font-size: 1.4em;
+}
+
+.footerLinkInstagram{
+    height: 27px;
+    padding-top: 5px;
+    font-size: 1.2em;
+}
+
+.footerLinkFacebook{
+    font-size: 1.15em;
+    height: 26px;
+    padding-top: 6px;
 }
 
 .footerLinkLinkedin:hover{
@@ -56,6 +69,15 @@
 .footerLinkGithub:hover{
     color: rgb(43, 43, 43);
     background: white;
+}
+
+
+.footerLinkInstagram:hover{
+    background: linear-gradient(#5A46C7, #FEC053)
+}
+
+.footerLinkFacebook:hover{
+    background: #3B5999;
 }
 
 .copyrightDiv{

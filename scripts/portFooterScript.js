@@ -10,8 +10,11 @@ function createFooterLink(linkName,  inHL, linkDestination){
 
     creEl('div', 'footerLinksDiv', 'footerDiv', 0);
     createFooterLink('Linkedin', 'linkedin', 'https://www.linkedin.com/in/mark-fitzpatrick-491419100/');
+    createFooterLink('Instagram', 'instagram', 'https://www.instagram.com/fitzandshout/');
     createFooterLink('Twitter', 'twitter', 'https://twitter.com/jetsetfitz');
     createFooterLink('Github', 'github', 'https://github.com/Havolt');
+    createFooterLink('Facebook', 'facebook', 'https://www.facebook.com/mark.fitzpatrick.545');
+    
 
     creEl('div', 'copyrightDiv', 'footerDiv', 0, 'Created by me &copy; 2018');
 })()
