@@ -1,6 +1,6 @@
 let projectData = {fadeAmt : 0.1, fadeDir: 0.1}
 
-
+//Function that creates the individual projects in this section
 function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
     creEl('div', 'projectItemContain', 'projectDiv', 0);
     creEl('div', 'projectItem', 'projectItemContain', itemNum);
@@ -10,8 +10,8 @@ function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
     creEl('div', ['projectItemDesc', 'projectItemDesc'+itemImgClass], 'projectItemContain', itemNum, itemImgDesc);
 }
 
+//Creates fade effect for info divs that pop up in project section
 function fadeInfo(bool){
-    console.log(bool)
     if(projectData.fadeAmt > 0 && projectData.fadeAmt < 1){
         projectData.fadeAmt = projectData.fadeAmt + projectData.fadeDir;
         projectData.fadeAmt = Math.round(projectData.fadeAmt * 10) / 10;
@@ -25,6 +25,7 @@ function fadeInfo(bool){
     }
 }
 
+//gives the div of class 'projectDarken' the hidden class or removes it
 function toggleHidden(darkDiv){
     let foundClass = false;
     for(let i = 0; i < darkDiv.classList.length; i++){
@@ -36,6 +37,7 @@ function toggleHidden(darkDiv){
     else{fadeInfo(true);}
 }
 
+//Changes the innerHTML of the info div wit title, img source, description area and button
 function addProjectInHL(title, imgLink, description){
     document.getElementsByClassName('projectInfoTitle')[0].innerHTML = title;
     document.getElementsByClassName('projectInfoButton')[0].innerHTML = 'View ' + title;
@@ -43,7 +45,7 @@ function addProjectInHL(title, imgLink, description){
     document.getElementsByClassName('projectInfoDescription')[0].innerHTML = description;
 }
 
-
+//give event listeners to divs
 function addProjectFunctions(divs){
     document.getElementsByClassName('projectDarken')[0].addEventListener('click', function(){
         if(event.srcElement == document.getElementsByClassName('projectDarken')[0]){
@@ -69,7 +71,7 @@ function addProjectFunctions(divs){
     }
 }
 
-
+//initializes the entire section
 (function initProjectSec(){
     creEl('div', ['projectDiv', 'sectionMainDiv'], 'main', 0);
 
