@@ -1,3 +1,5 @@
+let projectData = {fadeAmt : 0.1, fadeDir: 0.1}
+
 
 function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
     creEl('div', 'projectItemContain', 'projectDiv', 0);
@@ -8,6 +10,21 @@ function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
     creEl('div', ['projectItemDesc', 'projectItemDesc'+itemImgClass], 'projectItemContain', itemNum, itemImgDesc);
 }
 
+function fadeInfo(bool){
+    console.log(bool)
+    if(projectData.fadeAmt > 0 && projectData.fadeAmt < 1){
+        projectData.fadeAmt = projectData.fadeAmt + projectData.fadeDir;
+        projectData.fadeAmt = Math.round(projectData.fadeAmt * 10) / 10;
+        document.getElementsByClassName('projectDarken')[0].style.opacity=projectData.fadeAmt;
+        
+        setTimeout(function(){fadeInfo(bool)}, 40)
+    }else{ 
+        projectData.fadeDir = -projectData.fadeDir; 
+        projectData.fadeAmt = projectData.fadeAmt + projectData.fadeDir
+        if(bool){console.log('hi'); document.getElementsByClassName('projectDarken')[0].classList.add('hidden')}    
+    }
+}
+
 function toggleHidden(darkDiv){
     let foundClass = false;
     for(let i = 0; i < darkDiv.classList.length; i++){
@@ -15,9 +32,8 @@ function toggleHidden(darkDiv){
             foundClass = true;
         }
     }
-    console.log(foundClass)
-    if(foundClass){darkDiv.classList.remove('hidden')}
-    else{darkDiv.classList.add('hidden')}
+    if(foundClass){darkDiv.classList.remove('hidden'); fadeInfo()}
+    else{fadeInfo(true);}
 }
 
 function addProjectInHL(title, imgLink, description){
