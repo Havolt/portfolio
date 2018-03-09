@@ -20,22 +20,37 @@ function toggleHidden(darkDiv){
     else{darkDiv.classList.add('hidden')}
 }
 
-
-function addProjectFunctions(divs){
-    for(let i = 0; i < divs.length; i++){
-        divs[i].addEventListener('click', function(){
-            toggleHidden(document.getElementsByClassName('projectDarken')[0]);
-            toggleHidden(document.getElementsByClassName('projectInfoDiv')[0]);
-            addProjectInHL('Tetris', 'proj-tetris.png', 'This is tetris and blah blah blah')
-        })
-    }
-}
-
 function addProjectInHL(title, imgLink, description){
     document.getElementsByClassName('projectInfoTitle')[0].innerHTML = title;
     document.getElementsByClassName('projectInfoButton')[0].innerHTML = 'View ' + title;
     document.getElementsByClassName('projectInfoImg')[0].src='images/'+ imgLink;
     document.getElementsByClassName('projectInfoDescription')[0].innerHTML = description;
+}
+
+
+function addProjectFunctions(divs){
+    document.getElementsByClassName('projectDarken')[0].addEventListener('click', function(){
+        if(event.srcElement == document.getElementsByClassName('projectDarken')[0]){
+            toggleHidden(document.getElementsByClassName('projectDarken')[0]);
+        }
+    })
+    document.getElementsByClassName('projectInfoCross')[0].addEventListener('click', function(){
+        toggleHidden(document.getElementsByClassName('projectDarken')[0]);
+    })
+    for(let i = 0; i < divs.length; i++){
+        divs[i].addEventListener('click', function(){
+            toggleHidden(document.getElementsByClassName('projectDarken')[0]);
+            if(i == 0){
+                addProjectInHL('Tetris', 'proj-tetris.png', 'This is my version of Tetris made with Vanilla JavaScript. The game requires a keyboard for control of pieces. The game has multiple features such as difficulty levels, previews of upcoming blocks and sound effects. I hope you enjoy playing.');
+            }
+            else if(i == 1){
+                addProjectInHL('Checkers', 'proj-checkers.png', 'A JavaScript version of the classis board game Checkers. This is a two player game and includes all the rules of checkers with multitake and forced takes implemented and the ability to see where you can move your piece to next. ')
+            }
+            else if(i == 2){
+                addProjectInHL('To-Do', 'proj-todo.png', 'My own take on creating a to-do list. This application allows the user to create as many tasks as they would like. The app has a built in favourite option and gives the user the ability to delete tasks and display different sets of tasks ie completed tasks.')
+            }
+        })
+    }
 }
 
 
@@ -55,7 +70,8 @@ function addProjectInHL(title, imgLink, description){
     creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'View More');
 
     creEl('div', ['projectDarken', 'hidden'], 'main', 0);
-    creEl('div', ['projectInfoDiv', 'hidden'], 'projectDarken', 0);
+    creEl('div', 'projectInfoDiv', 'projectDarken', 0);
+    creEl('div', 'projectInfoCross', 'projectInfoDiv', 0, '<i class="fa fa-times"></i>');
     creEl('div', 'projectInfoTitle', 'projectInfoDiv', 0);
     creEl('img', 'projectInfoImg', 'projectInfoDiv', 0);
     creEl('div', 'projectInfoDescription', 'projectInfoDiv', 0);

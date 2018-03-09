@@ -109,17 +109,31 @@
 }
 
 .projectInfoDiv{
+    min-width: 310px;
     width: 80vw;
-    height: 80vh;
     background: rgb(243, 243, 243);
     border-radius: 10px;
-    margin: 10vh 10vw;
+    margin: 20px auto 0 auto;
+    padding-bottom: 40px;
+}
+
+.projectInfoCross{
+    font-size: 1.4em;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: white;
+}
+
+.projectInfoCross:hover{
+    color: rgb(248, 122, 122);
+    cursor: pointer;
 }
 
 .projectInfoTitle{
     font-size: 1.9em;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 25px;
     width: 80%;
     margin: 0 auto;
     border-bottom: 1px solid rgb(221, 221, 221);
@@ -127,7 +141,7 @@
 
 .projectInfoImg{
     width: 60%;
-    border: 1px solid rgba(57, 107, 187, 0.5);
+    border: 2px solid rgba(57, 107, 187, 0.5);
     display: block;
     margin: 20px auto;
 }
@@ -136,7 +150,7 @@
     width: 90%;
     text-align: center;
     margin: 0 auto;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .projectInfoButton{
