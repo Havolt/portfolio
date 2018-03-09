@@ -1,3 +1,4 @@
+//function utilized across site for creating elements
 function creEl(el, classes, apndClass, apndClassNum, inHL, id, src){
     let newEl = document.createElement(el);
     if(typeof(classes) == 'string'){
@@ -11,6 +12,7 @@ function creEl(el, classes, apndClass, apndClassNum, inHL, id, src){
     document.getElementsByClassName(apndClass)[apndClassNum].appendChild(newEl);
 }
 
+//function used in opening external web pages
 function openWebPage(elClass, numOfClass, destinationLink){
     document.getElementsByClassName(elClass)[numOfClass].addEventListener('click', function(){
         window.open(destinationLink);

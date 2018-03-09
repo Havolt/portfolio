@@ -1,5 +1,7 @@
+//object containg information required for functions on the webpage
 let introData = {logoMF : true, arrowRotateNum : 0, textJumpNum : 0, textJumpDir : -2 }
 
+//creates the star divs on the page by passing in the amount wanted and the size ('Small', 'Medium', 'Large')
 function createStars(amt, size){
     for(let i = 0; i < amt; i++){
         let xPos = Math.floor(Math.random()*90) +10;
@@ -10,7 +12,7 @@ function createStars(amt, size){
     }
 }
 
-
+//moves the stars at different speeds depending on the size of the div
 function moveStars(size){
     for(let i = 0; i < document.getElementsByClassName('intStar'+size).length; i++){
         let nextXPos = document.getElementsByClassName('intStar'+size)[i].style.left;
@@ -23,6 +25,7 @@ function moveStars(size){
     }
 }
 
+//swaps the logo when clicked between 'MF' and 'JS' and cycles through symbols to make effect look fluid
 function changeLogo(bool){
     let logoTimer = 50;
     let symbols = ['A', '$', '4', 'R', '8', '$', '?', 'L', 'S', '2', '7', 'T'];
@@ -38,6 +41,7 @@ function changeLogo(bool){
     }
 }
 
+//calls all moveStars function in one single function
 function moveAll(){
     moveStars('Small');
     moveStars('Medium');
@@ -45,6 +49,7 @@ function moveAll(){
     setTimeout(function(){moveAll()}, 180)
 }
 
+//transforms the arrow and by doing so gives the illusion of rotation
 function rotateArrow(arrow){
     arrow.style.transform = "rotateY("+introData.arrowRotateNum+"deg)";
     introData.arrowRotateNum =  introData.arrowRotateNum + 12;
@@ -60,6 +65,7 @@ function rotateArrow(arrow){
     }
 }
 
+//Makes the text move up and down when the arrow spins to a certain degree
 function textJump(text){
 
     introData.textJumpNum = introData.textJumpNum + introData.textJumpDir;
@@ -75,7 +81,7 @@ function textJump(text){
     }
 }
 
-
+//initializes the intro section
 (function initIntroSec(){
     creEl('div', ['introDiv', 'sectionMainDiv'], 'main', 0,);
     creEl('div', 'intLogoDiv', 'introDiv', 0, 'MF');
