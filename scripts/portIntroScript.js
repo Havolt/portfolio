@@ -50,7 +50,7 @@ function rotateArrow(arrow){
     introData.arrowRotateNum =  introData.arrowRotateNum + 12;
     if(introData.arrowRotateNum > 180){
         introData.arrowRotateNum = 0;
-        setTimeout(function(){rotateArrow(arrow);}, 1480)
+        setTimeout(function(){rotateArrow(arrow);}, 1180)
     }
     else if(introData.arrowRotateNum > 89 && introData.arrowRotateNum < 100){
         setTimeout(function(){rotateArrow(arrow); textJump(document.getElementsByClassName('intMoreText')[0])}, 180)

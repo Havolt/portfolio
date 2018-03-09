@@ -97,3 +97,17 @@
     font-size: 1.5em;
     padding: 2px 24px;
 }
+
+.projectDarken{
+    background: rgba(75, 75, 75, 0.85);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 5;
+}
+
+.darkScreenOff{
+    display: none;
+}

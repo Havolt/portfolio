@@ -5,7 +5,21 @@ function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
     creEl('div', ['projectItemImg', 'projectItemImg'+itemImgClass], 'projectItem', itemNum);
     creEl('div', ['projectItemImgOver', 'projectIIO'+itemImgClass], 'projectItem', itemNum);
     creEl('div', ['projectItemImgOverTitle', 'projectIIOT'+itemImgClass], 'projectItemImgOver', itemNum, itemImgTitle + ' ' + itemImgClass);
-    creEl('div', ['projectItemDesc', 'projectItemDesc'+itemImgClass], 'projectItemContain', itemNum, itemImgDesc );
+    creEl('div', ['projectItemDesc', 'projectItemDesc'+itemImgClass], 'projectItemContain', itemNum, itemImgDesc);
+}
+
+function darkenBackground(darkDiv){
+    for(let i = 0; i < darkDiv.classList.length; i++){
+        console.log(darkDiv.classList[i])
+    }
+}
+
+function addProjectFunctions(divs){
+    for(let i = 0; i < divs.length; i++){
+        divs[i].addEventListener('click', function(){
+            darkenBackground(document.getElementsByClassName('projectDarken')[0]);
+        })
+    }
 }
 
 
@@ -23,4 +37,8 @@ function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
     creEl('div', 'projectMore', 'projectDiv', 0);
     creEl('div', 'projectMoreText', 'projectMore', 0, 'If you would like to view more of my work please use the following link:');
     creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'View More');
+
+    creEl('div', ['projectDarken', 'darkScreenOff'], 'main', 0);
+
+    addProjectFunctions(document.getElementsByClassName('projectItemImgOver'))
 })()
