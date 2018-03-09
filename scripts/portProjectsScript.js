@@ -55,11 +55,11 @@ function addProjectInHL(title, imgLink, description){
     creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'View More');
 
     creEl('div', ['projectDarken', 'hidden'], 'main', 0);
-    creEl('div', ['projectInfoDiv', 'hidden'], 'projectDarken', 0,'hello');
+    creEl('div', ['projectInfoDiv', 'hidden'], 'projectDarken', 0);
     creEl('div', 'projectInfoTitle', 'projectInfoDiv', 0);
     creEl('img', 'projectInfoImg', 'projectInfoDiv', 0);
     creEl('div', 'projectInfoDescription', 'projectInfoDiv', 0);
-    creEl('div', 'projectInfoButton', 'projectInfoDiv', 0);
+    creEl('div', ['projectInfoButton', 'portButton'], 'projectInfoDiv', 0);
 
     addProjectFunctions(document.getElementsByClassName('projectItemImgOver'))
 })()

@@ -116,3 +116,31 @@
     margin: 10vh 10vw;
 }
 
+.projectInfoTitle{
+    font-size: 1.9em;
+    text-align: center;
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.projectInfoImg{
+    width: 60%;
+    border: 1px solid rgba(57, 107, 187, 0.5);
+    display: block;
+    margin: 20px auto;
+}
+
+.projectInfoDescription{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+.projectInfoButton{
+    font-size: 1.2em;
+    margin: 24px auto 0 auto;
+}
+
