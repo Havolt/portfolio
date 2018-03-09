@@ -1,5 +1,7 @@
+//object holds data required for functions
 let contactData = {ccBlueTopPos : -100, ccBlueTopDir : 2, ccBlueTopMove : true}
 
+//slides the contact section down into view or pushes it back up
 function showContact(sec){
     if(contactData.ccBlueTopMove){contactData.ccBlueTopMove = false;}
     contactData.ccBlueTopPos = contactData.ccBlueTopPos + contactData.ccBlueTopDir;
@@ -10,6 +12,7 @@ function showContact(sec){
     else{contactData.ccBlueTopDir = -contactData.ccBlueTopDir; contactData.ccBlueTopMove = true;}
 }
 
+//gives form elements correct data to send information to formspree
 function setFormData(){
     document.getElementsByClassName('ccBlueForm')[0].action="https://formspree.io/markfitz815@gmail.com";
     document.getElementsByClassName('ccBlueForm')[0].method="POST"
@@ -27,7 +30,7 @@ function setFormData(){
 
 
 
-
+//initializes contact section
 (function initContactSec(){
     creEl('div', ['contactDiv', 'sectionMainDiv'], 'main', 0);
     creEl('div', 'contactContain', 'contactDiv', 0);
@@ -45,11 +48,9 @@ function setFormData(){
     creEl('textarea', 'ccBlueText', 'ccBlueForm', 0);
     creEl('input', 'ccBlueSubmit', 'ccBlueForm', 0, 'Submit');
     
-    
-    
     setFormData();
     
-
+    //adds event listeners to elements on page
     document.getElementsByClassName('contactButton')[0].addEventListener('click', function(){
         if(contactData.ccBlueTopMove){
             showContact(document.getElementsByClassName('contactContainBlue')[0]);

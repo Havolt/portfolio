@@ -1,3 +1,4 @@
+//creates each about section
 function createAboutListItem(listItemName, iconHL, titleHL, paraHL){
     creEl('div', ['aboutListItem', 'abl'+listItemName], 'aboutListContain', 0);
     creEl('div', ['aboutListIcon', 'abli'+listItemName], 'abl'+listItemName, 0, iconHL);
@@ -5,6 +6,8 @@ function createAboutListItem(listItemName, iconHL, titleHL, paraHL){
     creEl('div', ['aboutListParagraph', 'ablp'+listItemName], 'abl'+listItemName, 0, paraHL);
 }
 
+
+//initializes about section
 (function initAboutSec(){
     creEl('div', ['aboutDiv', 'sectionMainDiv'], 'main', 0);
 
