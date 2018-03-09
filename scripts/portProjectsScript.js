@@ -8,18 +8,34 @@ function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
     creEl('div', ['projectItemDesc', 'projectItemDesc'+itemImgClass], 'projectItemContain', itemNum, itemImgDesc);
 }
 
-function darkenBackground(darkDiv){
+function toggleHidden(darkDiv){
+    let foundClass = false;
     for(let i = 0; i < darkDiv.classList.length; i++){
-        console.log(darkDiv.classList[i])
+        if(darkDiv.classList[i] == 'hidden'){
+            foundClass = true;
+        }
     }
+    console.log(foundClass)
+    if(foundClass){darkDiv.classList.remove('hidden')}
+    else{darkDiv.classList.add('hidden')}
 }
+
 
 function addProjectFunctions(divs){
     for(let i = 0; i < divs.length; i++){
         divs[i].addEventListener('click', function(){
-            darkenBackground(document.getElementsByClassName('projectDarken')[0]);
+            toggleHidden(document.getElementsByClassName('projectDarken')[0]);
+            toggleHidden(document.getElementsByClassName('projectInfoDiv')[0]);
+            addProjectInHL('Tetris', 'proj-tetris.png', 'This is tetris and blah blah blah')
         })
     }
+}
+
+function addProjectInHL(title, imgLink, description){
+    document.getElementsByClassName('projectInfoTitle')[0].innerHTML = title;
+    document.getElementsByClassName('projectInfoButton')[0].innerHTML = 'View ' + title;
+    document.getElementsByClassName('projectInfoImg')[0].src='images/'+ imgLink;
+    document.getElementsByClassName('projectInfoDescription')[0].innerHTML = description;
 }
 
 
@@ -38,7 +54,12 @@ function addProjectFunctions(divs){
     creEl('div', 'projectMoreText', 'projectMore', 0, 'If you would like to view more of my work please use the following link:');
     creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'View More');
 
-    creEl('div', ['projectDarken', 'darkScreenOff'], 'main', 0);
+    creEl('div', ['projectDarken', 'hidden'], 'main', 0);
+    creEl('div', ['projectInfoDiv', 'hidden'], 'projectDarken', 0,'hello');
+    creEl('div', 'projectInfoTitle', 'projectInfoDiv', 0);
+    creEl('img', 'projectInfoImg', 'projectInfoDiv', 0);
+    creEl('div', 'projectInfoDescription', 'projectInfoDiv', 0);
+    creEl('div', 'projectInfoButton', 'projectInfoDiv', 0);
 
     addProjectFunctions(document.getElementsByClassName('projectItemImgOver'))
 })()
