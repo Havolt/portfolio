@@ -1,4 +1,4 @@
-let projectData = {fadeAmt : 0.1, fadeDir: 0.1}
+let projectData = {fadeAmt : 0.1, fadeDir: 0.1, showingMore : false}
 
 //Function that creates the individual projects in this section
 function creProjectItem(itemApnd, itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
@@ -80,6 +80,8 @@ function addProjectFunctions(divs){
     }
 }
 
+
+
 //initializes the entire section
 (function initProjectSec(){
     creEl('div', ['projectDiv', 'sectionMainDiv'], 'main', 0);
@@ -88,8 +90,10 @@ function addProjectFunctions(divs){
     creEl('div', ['projectTitle', 'sectionTitle'], 'projectIntro', 0, 'Projects');
     creEl('div', ['projectParagraph', 'sectionParagraph'], 'projectIntro', 0, 'You can see a selection of some of my work below.');
 
-    creEl('div', ['mainProjectSection', 'projectSection'], 'projectDiv', 0);
-    creEl('div', ['secondProjectSection', 'projectSection'], 'projectDiv', 0);
+    creEl('div', 'projectSectionsContain', 'projectDiv', 0);
+
+    creEl('div', ['mainProjectSection', 'projectSection'], 'projectSectionsContain', 0);
+    creEl('div', ['secondProjectSection', 'projectSection', 'hidden'], 'projectSectionsContain', 0);
 
     //Main projects section
     creProjectItem('mainProjectSection', 0, 'Tetris',  '<i class="fa fa-th-large"></i>', 'This is the classic video game tetris re-made entirely in vanilla JavaScript. It contains multiple features such as varying difficulty levels, score system etc.');
@@ -102,8 +106,7 @@ function addProjectFunctions(divs){
     creProjectItem('secondProjectSection', 5, 'Snake', '<i class="fa fa-gamepad"></i>', 'A remake of the classic phone game snake. Snake utilizes keyboard controls and all the rules of the classic game.')
 
     creEl('div', 'projectMore', 'projectDiv', 0);
-    creEl('div', 'projectMoreText', 'projectMore', 0, 'If you would like to view more of my work please use the following link:');
-    creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'View More');
+    creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'Show More');
 
     creEl('div', ['projectDarken', 'hidden'], 'main', 0);
     creEl('div', 'projectInfoDiv', 'projectDarken', 0);
@@ -114,4 +117,18 @@ function addProjectFunctions(divs){
     creEl('div', ['projectInfoButton', 'portButton'], 'projectInfoDiv', 0);
 
     addProjectFunctions(document.getElementsByClassName('projectItemImgOver'))
+
+    
+
+    document.getElementsByClassName('projectMoreButton')[0].addEventListener('click', function(){
+
+
+        if(projectData.showingMore){
+            
+            window.scrollTo(0, window.scrollY - document.getElementsByClassName('secondProjectSection')[0].offsetHeight);
+        }
+        hideDiv('secondProjectSection', 0);
+        projectData.showingMore = !projectData.showingMore;
+
+    })
 })()

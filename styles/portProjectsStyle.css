@@ -1,5 +1,6 @@
 .projectDiv{
     background: #ededed;
+    overflow-y: hidden;
 }
 
 
@@ -169,5 +170,9 @@
 .projectInfoButton{
     font-size: 1.2em;
     margin: 24px auto 0 auto;
+}
+
+.projectSectionsContain{
+    overflow-y: hidden;
 }
 
