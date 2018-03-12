@@ -67,6 +67,15 @@ function addProjectFunctions(divs){
             else if(i == 2){
                 addProjectInHL('To-Do', 'proj-todo.png', 'My own take on creating a to-do list. This application allows the user to create as many tasks as they would like. The app has a built in favourite option and gives the user the ability to delete tasks and display different sets of tasks ie completed tasks.')
             }
+            else if(i == 3){
+                addProjectInHL('Calculator', 'proj-calculator.png', 'This calculator has multiple features. It allows for the use of all four basic operators in basic arithmetic. It displays previous inputs, allows for the stringing together of multiple operations. You can use your own keypad to enter commands by clicking into the screen area.')
+            }
+            else if(i == 4){
+                addProjectInHL('Wikipedia-API', 'proj-wikipedia.png', 'I created this wikipedia serch engine by utilizing the Wikipedia API. The user can search through the wikipedia database for pages and the most relevant pages will be listed with easy clickable links. There is also a random page feature.')
+            }
+            else if(i == 5){
+                addProjectInHL('Snake', 'proj-snake.png', 'The classic game of snake remade in JavaScript. Snake follows the rules of the classic game where the player has to collect food to grow bigger while the game gets quicker. Control the snake with the arrow keys on your keyboard.');
+            }
         })
     }
 }
@@ -90,6 +99,7 @@ function addProjectFunctions(divs){
     //Secondary projects section
     creProjectItem('secondProjectSection', 3, 'Calculator', '<i class="fa fa-calculator"></i>', 'A calculator with multiple features including the ability to display previous inputs and to string together numerous commands into a single equation.')
     creProjectItem('secondProjectSection', 4, 'Wiki-API', '<i class="fa fa-wikipedia-w"></i>', 'This is my Wikipedia search engine which utilizes the wikipedia API to bring the user back their results.');
+    creProjectItem('secondProjectSection', 5, 'Snake', '<i class="fa fa-gamepad"></i>', 'A remake of the classic phone game snake. Snake utilizes keyboard controls and all the rules of the classic game.')
 
     creEl('div', 'projectMore', 'projectDiv', 0);
     creEl('div', 'projectMoreText', 'projectMore', 0, 'If you would like to view more of my work please use the following link:');

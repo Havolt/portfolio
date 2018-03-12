@@ -35,6 +35,10 @@
     background: url("../images/proj-wikipedia.png");
 }
 
+.projectItemImgSnake{
+    background: url("../images/proj-snake.png");
+}
+
 .projectItemImg{
     width: 100%;
     height: auto;
