@@ -1,8 +1,8 @@
 let projectData = {fadeAmt : 0.1, fadeDir: 0.1}
 
 //Function that creates the individual projects in this section
-function creProjectItem(itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
-    creEl('div', 'projectItemContain', 'projectDiv', 0);
+function creProjectItem(itemApnd, itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
+    creEl('div', 'projectItemContain', itemApnd, 0);
     creEl('div', 'projectItem', 'projectItemContain', itemNum);
     creEl('div', ['projectItemImg', 'projectItemImg'+itemImgClass], 'projectItem', itemNum);
     creEl('div', ['projectItemImgOver', 'projectIIO'+itemImgClass], 'projectItem', itemNum);
@@ -79,9 +79,16 @@ function addProjectFunctions(divs){
     creEl('div', ['projectTitle', 'sectionTitle'], 'projectIntro', 0, 'Projects');
     creEl('div', ['projectParagraph', 'sectionParagraph'], 'projectIntro', 0, 'You can see a selection of some of my work below.');
 
-    creProjectItem(0, 'Tetris',  '<i class="fa fa-th-large"></i>', 'This is the classic video game tetris re-made entirely in vanilla JavaScript. It contains multiple features such as varying difficulty levels, score system etc.');
-    creProjectItem(1, 'Checkers', '<i class="fa fa-delicious"></i>', 'My own version of Checkers created using vanilla JavaScript. It contains most of the offical rules of checkers including mandatory takes and multi-takes.' );
-    creProjectItem(2, 'To-Do', '<i class="fa fa-calendar"></i>', 'A To-Do list written in pure JavaScript. This app allows the user to create items, favourite them, delete them and allows the user to cycle between different display options.')
+    creEl('div', ['mainProjectSection', 'projectSection'], 'projectDiv', 0);
+    creEl('div', ['secondProjectSection', 'projectSection'], 'projectDiv', 0);
+
+    //Main projects section
+    creProjectItem('mainProjectSection', 0, 'Tetris',  '<i class="fa fa-th-large"></i>', 'This is the classic video game tetris re-made entirely in vanilla JavaScript. It contains multiple features such as varying difficulty levels, score system etc.');
+    creProjectItem('mainProjectSection', 1, 'Checkers', '<i class="fa fa-delicious"></i>', 'My own version of Checkers created using vanilla JavaScript. It contains most of the offical rules of checkers including mandatory takes and multi-takes.' );
+    creProjectItem('mainProjectSection', 2, 'To-Do', '<i class="fa fa-calendar"></i>', 'A To-Do list written in pure JavaScript. This app allows the user to create items, favourite them, delete them and allows the user to cycle between different display options.');
+    
+    //Secondary projects section
+    creProjectItem('secondProjectSection', 3, 'Calculator', '<i class="fa fa-calculator"></i>', 'A calculator with multiple features including the ability to display previous inputs and to string together numerous commands into a single equation.')
 
     creEl('div', 'projectMore', 'projectDiv', 0);
     creEl('div', 'projectMoreText', 'projectMore', 0, 'If you would like to view more of my work please use the following link:');
