@@ -122,7 +122,6 @@ function addProjectFunctions(divs){
 
     document.getElementsByClassName('projectMoreButton')[0].addEventListener('click', function(){
 
-
         if(projectData.showingMore){
             
             window.scrollTo(0, window.scrollY - document.getElementsByClassName('secondProjectSection')[0].offsetHeight);

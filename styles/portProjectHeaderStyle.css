@@ -1,0 +1,24 @@
+.main{
+    min-height: 100vh;
+}
+
+.projectHeader{
+    overflow-y: hidden;
+    background: rgb(57, 107, 187);
+}
+
+.getBack{
+    font-size: 2.5em;
+    margin-left: 26px;
+    margin-top: 4px;
+    padding-bottom: 5px;
+    color: rgb(180, 180, 180);
+    width: fit-content;
+}
+
+.getBack:hover{
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0 1px black;
+}
+

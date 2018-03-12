@@ -13,8 +13,9 @@ function creEl(el, classes, apndClass, apndClassNum, inHL, id, src){
 }
 
 //function used in opening external web pages
-function openWebPage(elClass, numOfClass, destinationLink){
+function openWebPage(elClass, numOfClass, destinationLink, selfTrue){
     document.getElementsByClassName(elClass)[numOfClass].addEventListener('click', function(){
-        window.open(destinationLink);
+        if(!selfTrue){window.open(destinationLink);
+        }else{window.open(destinationLink, '_self')}
     })
 }

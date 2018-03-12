@@ -1,0 +1,92 @@
+.footerDiv{
+    border-top: 2px solid rgb(57, 107, 187);
+    background: #444;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+}
+
+.footerLinksDiv{
+    width: fit-content;
+    margin: 2vh auto 0 auto;
+}
+
+.footerLink{
+    margin: 0 6px 0 6px;
+    color: white;
+    border-radius: 50%;
+    background: rgb(43, 43, 43);
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    box-shadow: 0 0 1px rgb(153, 153, 153);
+    vertical-align: top;
+}
+
+.footerLink:hover{
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.footerLink{
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+.footerLinkLinkedin{
+    height: 27px;
+    padding-top: 5px;
+}
+
+.footerLinkTwitter{
+    height: 25px;
+    padding-top: 7px;
+}
+
+.footerLinkGithub{
+    height: 29px;
+    padding-top: 3px;
+    font-size: 1.4em;
+}
+
+.footerLinkInstagram{
+    height: 27px;
+    padding-top: 5px;
+    font-size: 1.2em;
+}
+
+.footerLinkFacebook{
+    font-size: 1.15em;
+    height: 26px;
+    padding-top: 6px;
+}
+
+.footerLinkLinkedin:hover{
+    background: #0274B3;
+}
+
+.footerLinkTwitter:hover{
+    background: #1DA1F2;
+}
+
+.footerLinkGithub:hover{
+    color: rgb(43, 43, 43);
+    background: white;
+}
+
+
+.footerLinkInstagram:hover{
+    background: linear-gradient(#5A46C7, #FEC053)
+}
+
+.footerLinkFacebook:hover{
+    background: #3B5999;
+}
+
+.copyrightDiv{
+    text-align: center;
+    margin-top: 18px;
+    padding-bottom: 46px;
+    color: rgb(199, 199, 199);
+}
