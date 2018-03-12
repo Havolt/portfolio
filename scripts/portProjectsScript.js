@@ -89,6 +89,7 @@ function addProjectFunctions(divs){
     
     //Secondary projects section
     creProjectItem('secondProjectSection', 3, 'Calculator', '<i class="fa fa-calculator"></i>', 'A calculator with multiple features including the ability to display previous inputs and to string together numerous commands into a single equation.')
+    creProjectItem('secondProjectSection', 4, 'Wiki-API', '<i class="fa fa-wikipedia-w"></i>', 'This is my Wikipedia search engine which utilizes the wikipedia API to bring the user back their results.');
 
     creEl('div', 'projectMore', 'projectDiv', 0);
     creEl('div', 'projectMoreText', 'projectMore', 0, 'If you would like to view more of my work please use the following link:');

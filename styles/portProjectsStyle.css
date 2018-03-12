@@ -31,6 +31,10 @@
     background: url("../images/proj-calculator.png");
 }
 
+.projectItemImgWiki-API{
+    background: url("../images/proj-wikipedia.png");
+}
+
 .projectItemImg{
     width: 100%;
     height: auto;
