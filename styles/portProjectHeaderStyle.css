@@ -2,18 +2,20 @@
     min-height: 100vh;
 }
 
+
 .projectHeader{
-    overflow-y: hidden;
+    vertical-align: baseline;
     background: rgb(57, 107, 187);
     position: relative;
     width: 100%;
-    color: rgb(180, 180, 180);
+    color: rgb(41, 41, 41);
+    height: 50px;
 }
 
 .getBack{
     font-size: 2.2em;
     margin-left: 12px;
-    margin-top: 4px;
+    margin-top: 0px;
     padding-bottom: 5px;
     width: fit-content;
 }
@@ -23,9 +25,16 @@
     cursor: pointer;
 }
 
+.headerLinksContain{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
 
 
 .headerLink{
+    padding: 2px 0;
     background: #444444;
     text-align: center;
     color: white;
@@ -41,16 +50,13 @@
 
 .headerBars{
     width: fit-content;
-    padding: 10px;
+    padding: 6px;
     font-size: 1.8em;
     position: absolute;
     right: 10px;
-    top: 0;
-}
-
-.headerBars:hover{
-    color: white;
-    cursor: pointer;
+    top: 1px;
+    user-select: none;
+    outline: none;
     
 }
 
@@ -103,6 +109,11 @@
 
 .headerLink:last-child{
     border-right: none;
+}
+
+.headerBars:hover{
+    color: white;
+    cursor: pointer;
 }
 
 }

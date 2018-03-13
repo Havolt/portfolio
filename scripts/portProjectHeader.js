@@ -1,4 +1,6 @@
 
+let headerData = {barsOn : false}
+
 function linkMaker(linkName, lastLinkBool){
     creEl('div', ['headerLink', 'headerLink'+linkName], 'headerLinksContain', 0, linkName  )
 }
@@ -13,6 +15,11 @@ function hideDiv(divClass, divNum){
     else{item.classList.remove('hidden')}
 }
 
+function barsChange(div){
+    if(!headerData.barsOn){div.style.color="white"; headerData.barsOn = true;}
+    else{div.style.color="rgb(41, 41, 41)"; headerData.barsOn = false;}
+}
+
 
 (function initProjectHeader(){
     creEl('div', 'projectHeader', 'main', 0);
@@ -22,6 +29,7 @@ function hideDiv(divClass, divNum){
 
     document.getElementsByClassName('headerBars')[0].addEventListener('click', function(){
         hideDiv('headerLinksContain', 0);
+        barsChange(this)
     })
 
     linkMaker('Tetris')
@@ -31,5 +39,5 @@ function hideDiv(divClass, divNum){
     linkMaker('wiki-API');
     linkMaker('Snake');
 
-    openWebPage('getBack', 0, 'index.html', true)
+    openWebPage('getBack', 0, 'index.html#projects', true);
 })()

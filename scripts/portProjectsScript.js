@@ -87,6 +87,7 @@ function addProjectFunctions(divs){
     creEl('div', ['projectDiv', 'sectionMainDiv'], 'main', 0);
 
     creEl('div', 'projectIntro', 'projectDiv', 0);
+    document.getElementsByClassName('projectIntro')[0].id="projects";
     creEl('div', ['projectTitle', 'sectionTitle'], 'projectIntro', 0, 'Projects');
     creEl('div', ['projectParagraph', 'sectionParagraph'], 'projectIntro', 0, 'You can see a selection of some of my work below.');
 
