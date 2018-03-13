@@ -433,3 +433,42 @@ body{
         font-size: 1.2em;
     }
 }
+
+@media only screen and (max-width: 460px) {
+
+    .tetrisBoard{
+        width: 260px;
+        height:  468px;
+    }
+
+    .statsContain{
+        height: 468px;
+    }
+
+    .tile{
+        width: 24px;
+        height: 24px;
+    }
+    .optionButtons{
+        width: 84px;
+        font-size: 1.1em;
+    }
+
+    .stats{
+        font-size: 0.7em;
+    }
+
+    .previewBlockContain{
+        width:80px;
+        height: 80px;
+    }
+
+    .previewBlockTitle{
+        font-size: 1em;
+    }
+
+    .prevTile{
+        width: 18px;
+        height: 18px;
+    }
+ }
