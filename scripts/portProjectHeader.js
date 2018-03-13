@@ -24,6 +24,7 @@ function barsChange(div){
 (function initProjectHeader(){
     creEl('div', 'projectHeader', 'main', 0);
     creEl('div', 'getBack', 'projectHeader', 0, '<i class="fa fa-angle-double-left"></i>');
+    creEl('div', 'projectTitle', 'projectHeader', 0);
     creEl('div', 'headerBars', 'projectHeader', 0, '<i class="fa fa-bars"></i>');
     creEl('div', ['headerLinksContain', 'hidden'], 'projectHeader', 0);
 

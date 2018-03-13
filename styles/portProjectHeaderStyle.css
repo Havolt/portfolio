@@ -4,7 +4,6 @@
 
 
 .projectHeader{
-    vertical-align: baseline;
     background: rgb(57, 107, 187);
     position: relative;
     width: 100%;
@@ -13,8 +12,8 @@
 }
 
 .getBack{
-    font-size: 2.2em;
-    margin-left: 12px;
+    font-size: 2.5em;
+    margin-left: 17px;
     margin-top: 0px;
     padding-bottom: 5px;
     width: fit-content;
@@ -25,11 +24,20 @@
     cursor: pointer;
 }
 
-.headerLinksContain{
+.projectTitle{
+    font-size: 2em;
+    font-weight: bold;
     position: absolute;
-    top: 50px;
-    width: 100%;
+    top: 6px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    color: rgb(221, 221, 221);
 }
+
+
 
 
 
@@ -60,7 +68,15 @@
     
 }
 
+@media only screen and (max-width: 619px) {
 
+.headerLinksContain{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+}
 
 
 @media only screen and (min-width: 620px) {
@@ -71,6 +87,9 @@
 
     .projectHeader{
         display: inline-flex;
+    }
+    .projectTitle{
+        display: none;
     }
 
 .getBack{
@@ -90,6 +109,9 @@
 }
 
 .headerLinksContain{
+    top: 0;
+    right: 0;
+    left: 0;
     margin-left: auto;
     margin-top: 20px;
     margin-right: 20px;
