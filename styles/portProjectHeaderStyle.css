@@ -123,11 +123,17 @@
 .headerLink{
     margin-right:15px;
     background: none;
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(221, 221, 221);
+    color: rgb(221, 221, 221);
     border-top: none;
     padding-right: 15px;
     font-size: 1em;
     height: fit-content;
+}
+
+.headerLink:hover{
+    background: none;
+    color: white;
 }
 
 .headerLink:last-child{
@@ -137,6 +143,11 @@
 .headerBars:hover{
     color: white;
     cursor: pointer;
+}
+
+.headLinkUnderline{
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 }

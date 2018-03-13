@@ -790,6 +790,7 @@ function createShapeDataCaller(obj){
 
 (function initApp(){
     document.getElementsByClassName('projectTitle')[0].innerHTML = tetrisData.name;
+    underlineLink(tetrisData.name);
     creElT('div', 'app', document.getElementsByClassName('main')[0], '', 'app');
     creElT('div', 'tetrisContain', document.getElementById('app'));
     creElT('div', 'tetrisBoard', document.getElementsByClassName('tetrisContain')[0]);

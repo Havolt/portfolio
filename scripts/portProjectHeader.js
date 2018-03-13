@@ -20,6 +20,17 @@ function barsChange(div){
     else{div.style.color="rgb(41, 41, 41)"; headerData.barsOn = false;}
 }
 
+function underlineLink(word){
+    console.log(word)
+    for(let i = 0; i < document.getElementsByClassName('headerLink').length; i++){
+        console.log(document.getElementsByClassName('headerLink')[i].innerHTML);
+        if(word == document.getElementsByClassName('headerLink')[i].innerHTML){
+            document.getElementsByClassName('headerLink')[i].classList.add('headLinkUnderline');
+            break;
+        }
+    }
+}
+
 
 (function initProjectHeader(){
     creEl('div', 'projectHeader', 'main', 0);
