@@ -6,8 +6,8 @@
     overflow-y: hidden;
     background: rgb(57, 107, 187);
     position: relative;
-
     width: 100%;
+    color: rgb(180, 180, 180);
 }
 
 .getBack{
@@ -15,9 +15,15 @@
     margin-left: 12px;
     margin-top: 4px;
     padding-bottom: 5px;
-    color: rgb(180, 180, 180);
     width: fit-content;
 }
+
+.getBack:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
 
 .headerLink{
     background: #444444;
@@ -25,10 +31,37 @@
     color: white;
     border-top: 1px solid #8a8a8a;
     font-size: 1.2em;
+    user-select: none;
+}
+
+.headerLink:hover{
+    background: #888;
+    cursor: pointer;
+}
+
+.headerBars{
+    width: fit-content;
+    padding: 10px;
+    font-size: 1.8em;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.headerBars:hover{
+    color: white;
+    cursor: pointer;
+    
 }
 
 
+
+
 @media only screen and (min-width: 620px) {
+
+    .headerBars{
+        display: none;
+    }
 
     .projectHeader{
         display: inline-flex;
