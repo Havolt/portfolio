@@ -304,8 +304,8 @@
   }
 
  (function init(){
-    document.getElementsByClassName('projectTitle')[0].innerHTML = calculatorData.name;
-    underlineLink(calculatorData.name);
+   document.getElementsByClassName('projectTitle')[0].innerHTML = calculatorData.name;
+   underlineLink(calculatorData.name);
    creEl('div', 'app', 'main', 0, '', 'app'); 
    buildCalc();
    idAssign();

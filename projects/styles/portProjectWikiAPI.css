@@ -1,0 +1,115 @@
+
+    body, html{
+        background-color: #f7f7f7;
+        font-family: arial;
+        
+      }
+
+      .main{
+          position: relative;
+      }
+  
+  
+      #searchContainer{
+        margin: 25px auto;
+        width: 70%;
+  
+      }
+  
+      #app{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 140px;
+      }
+  
+      #randomButton{
+        width: 70%;
+        margin: 50px auto 0 auto;
+        display: block;
+        font-size: 1.2em;
+        background-color: #4578cc;
+        border: 1px solid #4578cc;
+        color: white;
+        border-radius: 4px;
+        padding: 2px 0;
+      }
+  
+      #randomButton:hover{
+        background-color: #ffab3d;
+        border: 1px solid #d69b5c;
+        cursor: pointer;
+      }
+  
+  
+      #searchButton{
+        font-size: 2em;
+        height: 100%;
+        background-color: #4578cc;
+        color: white;
+        border: 2px solid #4578cc;
+        cursor: pointer;
+        width: 18%;
+      }
+  
+      #searchButton:hover{
+        background-color: #ffab3d;
+        border: 2px solid #d69b5c;
+      }
+  
+      #searchBar{
+        height: 39px;
+        width: 80%;
+        border: 1px solid #96beff;
+        float: left;
+        border-radius: 2%;
+        font-size: 1.8em;
+        padding-left: 2px;
+      }
+  
+      #searchBar:focus{
+        border: 2px solid #ffab3d;
+        margin-left: -1px;
+        margin-top: -1px;
+        margin-right: -1px;
+      }
+  
+      #listContainer{
+        margin: 0 auto;
+      }
+  
+      .listItemClass{
+        width: 100%;
+        border-radius: 1%;
+        border: 2px solid #96beff;
+        margin-bottom: 5px;
+        background-color: #f7f7f7;
+      }
+  
+      .listItemClass:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 10px #ffab3d;
+        background-color: white;
+        border: 2px solid #ffab3d;
+      }
+  
+  
+  
+      h3{
+        margin-left: 5%;
+        font-size: 1.4em;
+      }
+  
+      p{
+        font-style: italic;
+        margin-left: 2%;
+        color: #3b3f44;
+      }
+
+@media only screen and (max-width: 500px) {
+
+    #searchButton{
+        width: 16%;
+    }
+    
+}

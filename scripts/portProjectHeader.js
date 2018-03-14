@@ -46,7 +46,7 @@ function underlineLink(word){
     linkMaker('Checkers');
     linkMaker('To-do');
     linkMaker('Calculator');
-    linkMaker('wiki-API');
+    linkMaker('Wiki-API');
     linkMaker('Snake');
 
     openWebPage('getBack', 0, 'index.html#projects', true);
