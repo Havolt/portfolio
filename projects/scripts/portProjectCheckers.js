@@ -10,6 +10,7 @@ let whiteTurn = true;
 let direction;
 let pieceSelectedBool = false;
 let pieceSelectedInfo;
+let checkersData = {name: 'Checkers'};  
 
 
 //Arrays
@@ -513,6 +514,8 @@ function textHelp(){
 
 //Initializes everything
 (function initApp(){
+  document.getElementsByClassName('projectTitle')[0].innerHTML = checkersData.name;
+  underlineLink(checkersData.name);
   creEl('div', 'app', 'main', 0, '', 'app');
   createBoardArr();
   createColorArr('light');
