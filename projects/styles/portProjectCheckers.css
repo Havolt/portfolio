@@ -1,0 +1,79 @@
+html, body{
+    background-color: #f7f7f7;
+    font-family: arial, sans-serif;
+  }
+  
+  #app{
+    margin: 40px auto 16px auto;
+    width: 640px;
+    height: 640px;
+    border: 5px solid #67759B;
+    position: relative;
+  }
+
+  .main{
+      position: relative;
+      padding-bottom: 200px;
+  }
+
+  .site{
+      position: relative;
+  }
+
+  
+  .allTile{
+    width: 80px;
+    height: 80px;
+    float: left;
+  }
+  
+  .darkTile{
+    background-color: #A67D5D;
+  }
+  
+  .lightTile{
+    background-color: #E8D0AA;
+  }
+  
+  .allPiece{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 11px auto;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .darkPiece{
+    background-color: #512D28;
+  }
+  
+  .lightPiece{
+    background-color: #F4C242;
+  }
+  
+  #textArea{
+    width: 400px;
+    height: 80px;
+    background-color: #67759B;
+    margin: -14px auto;
+    border-radius: 12px;
+    position: relative;
+  }
+  
+  #textMove{
+    padding-top: 8px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  #textMand{
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #8c6343;
+  }
+
+
+  
