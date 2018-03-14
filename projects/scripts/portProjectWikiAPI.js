@@ -75,7 +75,6 @@
     }
 
     function createSearch(){
-        console.log(app)
       const randomSearch = document.createElement('button');
       randomSearch.id = "randomButton";
       randomSearch.innerHTML= "Click Here for a Random Article";
