@@ -441,6 +441,14 @@ body{
     }
 }
 
+@media only screen and (max-width: 515px) {
+
+    .tetrisBoard{
+        margin: 20px auto;
+    }
+
+}
+
 @media only screen and (max-width: 460px) {
 
     .tetrisBoard{
@@ -477,5 +485,22 @@ body{
     .prevTile{
         width: 18px;
         height: 18px;
+    }
+ }
+
+ @media only screen and (max-width: 355px) {
+
+    body{
+        min-width: 350px;
+        overflow-x: scroll; 
+       
+    }
+
+    html{
+        background: #444;
+    }
+
+    .tetrisContain{
+        min-width: 350px;
     }
  }

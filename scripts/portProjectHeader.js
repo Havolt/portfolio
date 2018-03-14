@@ -21,9 +21,7 @@ function barsChange(div){
 }
 
 function underlineLink(word){
-    console.log(word)
     for(let i = 0; i < document.getElementsByClassName('headerLink').length; i++){
-        console.log(document.getElementsByClassName('headerLink')[i].innerHTML);
         if(word == document.getElementsByClassName('headerLink')[i].innerHTML){
             document.getElementsByClassName('headerLink')[i].classList.add('headLinkUnderline');
             break;
