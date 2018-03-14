@@ -76,4 +76,71 @@ html, body{
   }
 
 
+  @media only screen and (max-width: 680px) {
+
+    #app{
+        width: 100%;
+        border: none;
+        
+        margin-top: 125px;
+        height: fit-content;
+    }
+
+    .allTile{
+        width: 12.5%;
+        padding-top: 12.5%;
+        height: 0;
+        float: left;
+      }
+
+      .allPiece{
+          margin-top: -95%;
+          width: 90%;
+          height: 0;
+          padding-top: 90%;
+      }
+
+      .main{
+        padding-bottom: 360px;
+      }
+
+      #textArea{
+          position: absolute;
+          margin: 0 auto;
+          top: 90px;;
+          left: 0;
+          right: 0;
+          margin-right: auto;
+          margin-left: auto;
+          width: 100%;
+      }
+
+      
+
+  }
+
+  @media only screen and (max-width: 600px) {
+      .main{
+          padding-bottom: 270px;
+      }
+  }
+
+  @media only screen and (max-width: 500px) {
+      .main{
+          padding-bottom: 160px;
+      }
+
+      #textArea{
+          font-size: 0.8em;
+          height: 70px;
+      }
+  }
+
+
+  @media only screen and (max-width: 420px) {
+
+    .main{
+        padding-bottom: 80px;
+    }
+  }
   
