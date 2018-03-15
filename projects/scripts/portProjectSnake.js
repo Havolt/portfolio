@@ -13,6 +13,7 @@ let gameOverBool = false;
 let topScore = 0;
 let winState = false;
 let winObj = {arr: [], x: 0, y: 0, xTop: 23, yTop: 23, dir: 'y', yAdd: 1, xAdd: 1, yBottom:0,xBottom:0};
+let snakeData = {name: 'Snake'};
 
 function createCanvas(){
   const c = document.createElement('canvas');
@@ -303,6 +304,8 @@ function startGame(){
 
 
 (function init(){
+  document.getElementsByClassName('projectTitle')[0].innerHTML = snakeData.name;
+  underlineLink(snakeData.name);
   creEl('div', 'app', 'main', 0, '', 'app');
   createCanvas();
   createScoreboard();

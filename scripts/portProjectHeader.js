@@ -1,6 +1,8 @@
 
 let headerData = {barsOn : false}
 
+let linkData = [{name: 'Tetris', link: 'tetris.html'}, {name: 'Checkers', link: 'checkers.html'},{name: 'To-do', link: 'todo.html'},{name: 'Calculator', link: 'calculator.html'},{name: 'Wiki-API', link: 'wikiApi.html'},{name: 'Snake', link: 'snake.html'}]
+
 function linkMaker(linkName, lastLinkBool){
     creEl('div', ['headerLink', 'headerLink'+linkName], 'headerLinksContain', 0, linkName  )
 }
@@ -29,6 +31,22 @@ function underlineLink(word){
     }
 }
 
+function addLinkEvents(arr, links){
+
+
+    for(let i = 0; i < arr.length; i++){
+
+        for(let j = 0; j < links.length; j++){
+            console.log(links[i])
+            if(arr[i].name == links[j].innerHTML){
+                openWebPage('headerLink', j, arr[i].link);
+                break;
+            }
+        }
+    }
+
+}
+
 
 (function initProjectHeader(){
     creEl('div', 'projectHeader', 'main', 0);
@@ -48,6 +66,8 @@ function underlineLink(word){
     linkMaker('Calculator');
     linkMaker('Wiki-API');
     linkMaker('Snake');
+
+    addLinkEvents(linkData, document.getElementsByClassName('headerLink'));
 
     openWebPage('getBack', 0, 'index.html#projects', true);
 })()
