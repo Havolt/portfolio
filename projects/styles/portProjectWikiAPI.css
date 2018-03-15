@@ -13,7 +13,6 @@
       #searchContainer{
         margin: 25px auto;
         width: 70%;
-  
       }
   
       #app{
@@ -68,10 +67,8 @@
       }
   
       #searchBar:focus{
-        border: 2px solid #ffab3d;
-        margin-left: -1px;
-        margin-top: -1px;
-        margin-right: -1px;
+        border: 1px solid #ffab3d;
+        outline: none;
       }
   
       #listContainer{
@@ -113,3 +110,15 @@
     }
     
 }
+
+@media only screen and (min-width: 1000px) {
+
+  #searchContainer{
+    width: 50%;
+  }
+
+  #randomButton{
+    width: 50%;
+  }
+
+ }

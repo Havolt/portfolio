@@ -56,3 +56,17 @@ body, html{
     text-shadow: 0 2px 2px black;
   }
   
+
+  @media only screen and (max-width: 520px) {
+
+
+    body{
+      overflow-x: scroll;
+    }
+
+    .site{
+      min-width: 510px;
+    }
+
+
+  }

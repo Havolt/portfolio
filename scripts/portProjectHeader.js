@@ -35,11 +35,9 @@ function addLinkEvents(arr, links){
 
 
     for(let i = 0; i < arr.length; i++){
-
         for(let j = 0; j < links.length; j++){
-            console.log(links[i])
             if(arr[i].name == links[j].innerHTML){
-                openWebPage('headerLink', j, arr[i].link);
+                openWebPage('headerLink', j, arr[i].link, true);
                 break;
             }
         }
