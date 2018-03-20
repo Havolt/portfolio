@@ -1,4 +1,4 @@
-let projectData = {fadeAmt : 0.1, fadeDir: 0.1, showingMore : false, link : ''}
+let projectData = {fadeAmt : 0.1, fadeDir: 0.1, showingMore : false, link : '', projectInfoExist: false}
 
 //Function that creates the individual projects in this section
 function creProjectItem(itemApnd, itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
@@ -27,6 +27,7 @@ function fadeInfo(bool){
 
 //gives the div of class 'projectDarken' the hidden class or removes it
 function toggleHidden(darkDiv){
+    projectData.projectInfoExist = !projectData.projectInfoExist;
     let foundClass = false;
     for(let i = 0; i < darkDiv.classList.length; i++){
         if(darkDiv.classList[i] == 'hidden'){
@@ -81,10 +82,9 @@ function addProjectFunctions(divs){
     }
 }
 
+
 function projectLinkButtons(lnk){
-    console.log(lnk)
     window.open(lnk, '_self');
-    console.log(lnk)
 }
 
 
@@ -116,7 +116,7 @@ function projectLinkButtons(lnk){
     creEl('div', 'projectMore', 'projectDiv', 0);
     creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'Show More');
 
-    creEl('div', ['projectDarken', 'hidden'], 'main', 0);
+    creEl('div', ['projectDarken', 'hidden'], 'site', 0);
     creEl('div', 'projectInfoDiv', 'projectDarken', 0);
     creEl('div', 'projectInfoCross', 'projectInfoDiv', 0, '<i class="fa fa-times"></i>');
     creEl('div', 'projectInfoTitle', 'projectInfoDiv', 0);

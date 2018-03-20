@@ -120,6 +120,7 @@
     position: fixed;
     z-index: 100;
     opacity: 0.1;
+    overflow-y: scroll;
 }
 
 .projectInfoDiv{
@@ -129,6 +130,7 @@
     border-radius: 10px;
     margin: 20px auto 0 auto;
     padding-bottom: 40px;
+    
 }
 
 .projectInfoCross{
@@ -181,6 +183,15 @@
 }
 
 @media only screen and (min-width: 700px) {
+
+    .projectTitle{
+        padding-top: 60px;
+        font-size: 3.5em;
+    }
+
+    .projectParagraph{
+        font-size: 1.1em;
+    }
 
 
     .projectInfoDiv{

@@ -21,6 +21,10 @@ html, body{
     font-weight: bold;
 }
 
+.main{
+    height: 100%;
+}
+
 .hidden{
     display: none;
 }
