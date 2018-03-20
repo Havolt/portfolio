@@ -63,18 +63,27 @@
 
 @media only screen and (min-width: 650px) {
 
+    .aboutIntroTitle{
+        font-size: 1.5em;
+    }
+
 
     .aboutIntroText{
         display: inline-block;
-        width: 40%;
+        width: 58%;
     }
 
     .aboutIntro{
+        margin-top: 50px;
         margin-bottom: 40px;
+    }
+
+    .aboutTitle{
+        padding-top: 50px;
     }
     
     .aboutParagraph{
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .aboutParagraphHidden{
@@ -85,12 +94,34 @@
     
     
     .aboutProfilePic{
-        width: 26%;
+        width: 30%;
         margin-left: 10%;   
         display: inline-block;
         float: left;
-        
+        max-width: 300px;
     }
+
+    .aboutListContain{
+        margin-top: 110px;
+    }
+
+
     
+
+}
+
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+
+    .aboutTitle{
+        padding-top: 8%;
+    }
+
+    .aboutProfilePic{
+        padding-top: 2%;
+    }
+
+    .aboutListContain{
+        margin-top: 50px;
+    }
 
 }
