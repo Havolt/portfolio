@@ -1,4 +1,4 @@
-let projectData = {fadeAmt : 0.1, fadeDir: 0.1, showingMore : false}
+let projectData = {fadeAmt : 0.1, fadeDir: 0.1, showingMore : false, link : ''}
 
 //Function that creates the individual projects in this section
 function creProjectItem(itemApnd, itemNum, itemImgClass,  itemImgTitle, itemImgDesc){
@@ -21,7 +21,7 @@ function fadeInfo(bool){
     }else{ 
         projectData.fadeDir = -projectData.fadeDir; 
         projectData.fadeAmt = projectData.fadeAmt + projectData.fadeDir
-        if(bool){console.log('hi'); document.getElementsByClassName('projectDarken')[0].classList.add('hidden')}    
+        if(bool){document.getElementsByClassName('projectDarken')[0].classList.add('hidden')}    
     }
 }
 
@@ -38,11 +38,12 @@ function toggleHidden(darkDiv){
 }
 
 //Changes the innerHTML of the info div wit title, img source, description area and button
-function addProjectInHL(title, imgLink, description){
+function addProjectInHL(title, imgLink, description, lnk){
     document.getElementsByClassName('projectInfoTitle')[0].innerHTML = title;
     document.getElementsByClassName('projectInfoButton')[0].innerHTML = 'View ' + title;
     document.getElementsByClassName('projectInfoImg')[0].src='images/'+ imgLink;
     document.getElementsByClassName('projectInfoDescription')[0].innerHTML = description;
+    projectData.link = lnk;
 }
 
 //give event listeners to divs
@@ -59,25 +60,31 @@ function addProjectFunctions(divs){
         divs[i].addEventListener('click', function(){
             toggleHidden(document.getElementsByClassName('projectDarken')[0]);
             if(i == 0){
-                addProjectInHL('Tetris', 'proj-tetris.png', 'This is my version of Tetris made with Vanilla JavaScript. The game requires a keyboard for control of pieces. The game has multiple features such as difficulty levels, previews of upcoming blocks and sound effects. I hope you enjoy playing.');
+                addProjectInHL('Tetris', 'proj-tetris.png', 'This is my version of Tetris made with Vanilla JavaScript. The game requires a keyboard for control of pieces. The game has multiple features such as difficulty levels, previews of upcoming blocks and sound effects. I hope you enjoy playing.', 'tetris.html');
             }
             else if(i == 1){
-                addProjectInHL('Checkers', 'proj-checkers.png', 'A JavaScript version of the classis board game Checkers. This is a two player game and includes all the rules of checkers with multitake and forced takes implemented and the ability to see where you can move your piece to next. ')
+                addProjectInHL('Checkers', 'proj-checkers.png', 'A JavaScript version of the classis board game Checkers. This is a two player game and includes all the rules of checkers with multitake and forced takes implemented and the ability to see where you can move your piece to next.', 'checkers.html')
             }
             else if(i == 2){
-                addProjectInHL('To-Do', 'proj-todo.png', 'My own take on creating a to-do list. This application allows the user to create as many tasks as they would like. The app has a built in favourite option and gives the user the ability to delete tasks and display different sets of tasks ie completed tasks.')
+                addProjectInHL('To-Do', 'proj-todo.png', 'My own take on creating a to-do list. This application allows the user to create as many tasks as they would like. The app has a built in favourite option and gives the user the ability to delete tasks and display different sets of tasks ie completed tasks.', 'todo.html')
             }
             else if(i == 3){
-                addProjectInHL('Calculator', 'proj-calculator.png', 'This calculator has multiple features. It allows for the use of all four basic operators in basic arithmetic. It displays previous inputs, allows for the stringing together of multiple operations. You can use your own keypad to enter commands by clicking into the screen area.')
+                addProjectInHL('Calculator', 'proj-calculator.png', 'This calculator has multiple features. It allows for the use of all four basic operators in basic arithmetic. It displays previous inputs, allows for the stringing together of multiple operations. You can use your own keypad to enter commands by clicking into the screen area.', 'calculator.html')
             }
             else if(i == 4){
-                addProjectInHL('Wikipedia-API', 'proj-wikipedia.png', 'I created this wikipedia serch engine by utilizing the Wikipedia API. The user can search through the wikipedia database for pages and the most relevant pages will be listed with easy clickable links. There is also a random page feature.')
+                addProjectInHL('Wikipedia-API', 'proj-wikipedia.png', 'I created this wikipedia serch engine by utilizing the Wikipedia API. The user can search through the wikipedia database for pages and the most relevant pages will be listed with easy clickable links. There is also a random page feature.', 'wikiAPI.html')
             }
             else if(i == 5){
-                addProjectInHL('Snake', 'proj-snake.png', 'The classic game of snake remade in JavaScript. Snake follows the rules of the classic game where the player has to collect food to grow bigger while the game gets quicker. Control the snake with the arrow keys on your keyboard.');
+                addProjectInHL('Snake', 'proj-snake.png', 'The classic game of snake remade in JavaScript. Snake follows the rules of the classic game where the player has to collect food to grow bigger while the game gets quicker. Control the snake with the arrow keys on your keyboard.', 'snake.html');
             }
         })
     }
+}
+
+function projectLinkButtons(lnk){
+    console.log(lnk)
+    window.open(lnk, '_self');
+    console.log(lnk)
 }
 
 
@@ -118,6 +125,8 @@ function addProjectFunctions(divs){
     creEl('div', ['projectInfoButton', 'portButton'], 'projectInfoDiv', 0);
 
     addProjectFunctions(document.getElementsByClassName('projectItemImgOver'))
+
+    document.getElementsByClassName('projectInfoButton')[0].addEventListener('click', function(){projectLinkButtons(projectData.link)})
 
     
 

@@ -176,6 +176,30 @@
     overflow-y: hidden;
 }
 
+@media only screen and (min-width: 650px) {
+
+
+    .projectInfoDiv{
+        width: 60vw;
+    }
+
+    .projectInfoTitle{
+        padding-top: 50px;
+    }
+
+    .projectInfoDescription{
+
+        margin-top: 3   0px;
+        width: 70%;
+        margin-bottom: 40px;
+        font-size: 1.1em;
+    }
+
+    .projectInfoImg{
+        margin-top: 40px;
+    }
+}
+
 
 
 
