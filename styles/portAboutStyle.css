@@ -59,6 +59,7 @@
 .abliDesign{
     margin-bottom: 8px;
     font-size: 4.3em;
+
 }
 
 @media only screen and (min-width: 650px) {
@@ -90,9 +91,6 @@
         display: block;
     }
     
-    
-    
-    
     .aboutProfilePic{
         width: 30%;
         margin-left: 10%;   
@@ -102,7 +100,22 @@
     }
 
     .aboutListContain{
-        margin-top: 110px;
+        display: inline-flex;
+        margin: 70px 5% 70px 5%;
+    }
+
+    .aboutListItem{
+        width: 30%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .abliCode{
+        font-size: 6em;
+    }
+
+    .abliDesign{
+        font-size: 5.5em;
     }
 
 
