@@ -89,6 +89,8 @@ function projectLinkButtons(lnk){
 
 
 
+
+
 //initializes the entire section
 (function initProjectSec(){
     creEl('div', ['projectDiv', 'sectionMainDiv'], 'main', 0);
@@ -127,8 +129,6 @@ function projectLinkButtons(lnk){
     addProjectFunctions(document.getElementsByClassName('projectItemImgOver'))
 
     document.getElementsByClassName('projectInfoButton')[0].addEventListener('click', function(){projectLinkButtons(projectData.link)})
-
-    
 
     document.getElementsByClassName('projectMoreButton')[0].addEventListener('click', function(){
 

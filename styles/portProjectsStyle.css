@@ -47,7 +47,12 @@
     height: 0;
     padding-top: 58.82%;
     background-size: cover;
+}
 
+.projectItem:hover > .projectItemImg{
+    background-size: 150%;
+    transition: background 10s;
+    background-position: center;
 }
 
 .projectItemImgOver{
@@ -66,6 +71,7 @@
     position: absolute;
     color: white;
     font-size: 3em;
+    user-select: none;
     top: 34%;
     right: 0;
     left: 0;
