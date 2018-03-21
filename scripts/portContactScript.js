@@ -28,6 +28,12 @@ function setFormData(){
     document.getElementsByClassName('ccBlueSubmit')[0].value="Send";
 }
 
+function shakeBox(div, size, runner){
+    div.style.left= size + "px";
+    runner++;
+    if(runner < 8){setTimeout(function(){shakeBox(div, -size, runner)}, 80)}
+    else{div.style.left="0px"}
+}
 
 
 //initializes contact section
@@ -66,14 +72,26 @@ function setFormData(){
         if(document.getElementsByClassName('ccBlueName')[0].value.length < 1){
             event.preventDefault();
             document.getElementsByClassName('ccBlueName')[0].style.border="#d31717 2px solid";
+            shakeBox(document.getElementsByClassName('ccBlueName')[0], 10, 0);
         }
         if(document.getElementsByClassName('ccBlueEmail')[0].value.length < 1){
             event.preventDefault();
             document.getElementsByClassName('ccBlueEmail')[0].style.border="#d31717 2px solid";
+            shakeBox(document.getElementsByClassName('ccBlueEmail')[0], 10, 0);
         }
         if(document.getElementsByClassName('ccBlueText')[0].value.length < 1){
             event.preventDefault();
             document.getElementsByClassName('ccBlueText')[0].style.border="#d31717 2px solid";
+            shakeBox(document.getElementsByClassName('ccBlueText')[0], 10, 0);
         }
+    })
+    document.getElementsByClassName('ccBlueName')[0].addEventListener('keydown', function(){
+        this.style.border="#444 2px solid";
+    })
+    document.getElementsByClassName('ccBlueEmail')[0].addEventListener('keydown', function(){
+        this.style.border="#444 2px solid";
+    })
+    document.getElementsByClassName('ccBlueText')[0].addEventListener('keydown', function(){
+        this.style.border="#444 2px solid";
     })
 })()

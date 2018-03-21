@@ -67,6 +67,7 @@
 }
 
 .ccBlueName{
+    position: relative;
     border: 2px solid #444;
     width: 80%;
     margin: 20px auto 10px auto;
@@ -76,6 +77,7 @@
 }
 
 .ccBlueEmail{
+    position: relative;
     border: 2px solid #444;
     width: 80%;
     margin: 0 auto 10px auto;
@@ -85,6 +87,7 @@
 }
 
 .ccBlueText{
+    position: relative;
     border: 2px solid #444;
     width: 80%;
     margin: 0 auto 10px auto;
