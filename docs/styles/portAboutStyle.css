@@ -1,0 +1,140 @@
+.aboutDiv{
+    background: #f8f8f8;
+    overflow: auto;
+}
+
+.aboutIntro{
+    margin-bottom: 40px;
+}
+
+.aboutParagraph{
+    font-size: 1em;
+}
+
+.aboutParagraphHidden{
+    display: none;
+}
+
+
+
+
+.aboutProfilePic{
+    width: 60%;
+    margin: 40px auto 0 auto;
+}
+
+.aboutPPImg{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.aboutListItem{
+    margin-bottom: 40px;
+}
+
+.aboutListIcon{
+    font-size: 6em;
+    text-align: center;
+    color: rgb(57, 107, 187);
+}
+
+.aboutListTitle{
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutListParagraph{
+    font-size: 1em;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.abliCode{
+    font-size: 4.8em;
+}
+
+.abliDesign{
+    margin-bottom: 8px;
+    font-size: 4.3em;
+
+}
+
+@media only screen and (min-width: 650px) {
+
+    .aboutIntroTitle{
+        font-size: 1.5em;
+    }
+
+
+    .aboutIntroText{
+        display: inline-block;
+        width: 58%;
+    }
+
+    .aboutIntro{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .aboutTitle{
+        padding-top: 50px;
+    }
+    
+    .aboutParagraph{
+        font-size: 1em;
+    }
+
+    .aboutParagraphHidden{
+        display: block;
+    }
+    
+    .aboutProfilePic{
+        width: 30%;
+        margin-left: 10%;   
+        display: inline-block;
+        float: left;
+        max-width: 300px;
+    }
+
+    .aboutListContain{
+        display: inline-flex;
+        margin: 35px 5% 70px 5%;
+    }
+
+    .aboutListItem{
+        width: 30%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .abliCode{
+        font-size: 6em;
+    }
+
+    .abliDesign{
+        font-size: 5.5em;
+    }
+
+
+    
+
+}
+
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+
+    .aboutTitle{
+        padding-top: 8%;
+    }
+
+    .aboutProfilePic{
+        padding-top: 2%;
+    }
+
+    .aboutListContain{
+        margin-top: 50px;
+    }
+
+}

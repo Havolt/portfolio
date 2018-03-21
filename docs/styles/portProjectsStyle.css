@@ -1,0 +1,319 @@
+.projectDiv{
+    background: #ededed;
+    overflow-y: hidden;
+}
+
+
+.projectItem{
+    width: 72%;
+    margin: 40px auto 0 auto;
+    position: relative;
+}
+
+.projectParagraph{
+    font-size: 1em;
+}
+
+
+
+.projectItemImgTetris{
+    background: url("../images/proj-tetris.png");
+}
+
+.projectItemImgCheckers{
+    background: url("../images/proj-checkers.png");
+}
+
+.projectItemImgTo-Do{
+    background: url("../images/proj-todo.png");
+}
+
+.projectItemImgCalculator{
+    background: url("../images/proj-calculator.png");
+}
+
+.projectItemImgWiki-API{
+    background: url("../images/proj-wikipedia.png");
+}
+
+.projectItemImgSnake{
+    background: url("../images/proj-snake.png");
+}
+
+.projectItemImg{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    height: 0;
+    padding-top: 58.82%;
+    background-size: cover;
+}
+
+.projectItem:hover > .projectItemImg{
+    background-size: 150%;
+    transition: background 10s;
+    background-position: center;
+}
+
+.projectItemImgOver{
+    width: 100%;
+    padding-top: 58.82%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border-radius: 10px;
+    background: rgba(12, 112, 143, 0.85);
+}
+
+
+.projectItemImgOverTitle{
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    user-select: none;
+    top: 34%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.projectItemImgOverTitle > i{
+    font-size: 0.75em;
+}
+
+.projectItemImgOverTitle{
+    font-family: monospace;
+}
+
+.projectIIOTCheckers > i{
+    font-size: 0.65em;
+}
+
+
+
+.projectItemDesc{
+    width: 80%;
+    margin: 15px auto 0 auto;
+    font-size: 0.9em;
+    text-align: center;
+    color: rgb(65, 65, 65);
+}
+
+.projectMore{
+    border-top: 1px solid rgb(209, 209, 209);
+    padding-top: 30px;
+    margin-top: 40px;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.projectMoreButton{
+    margin: 15px auto 0 auto;
+    font-size: 1.5em;
+    padding: 2px 24px;
+}
+
+.projectDarken{
+    background: rgba(75, 75, 75, 0.85);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    opacity: 0.1;
+    overflow-y: scroll;
+}
+
+.projectInfoDiv{
+    min-width: 310px;
+    width: 80vw;
+    background: rgb(243, 243, 243);
+    border-radius: 10px;
+    margin: 20px auto 0 auto;
+    padding-bottom: 40px;
+    
+}
+
+.projectInfoCross{
+    font-size: 1.4em;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: white;
+}
+
+.projectInfoCross:hover{
+    color: rgb(248, 122, 122);
+    cursor: pointer;
+}
+
+.projectInfoTitle{
+    font-size: 1.9em;
+    text-align: center;
+    padding-top: 25px;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.projectInfoImg{
+    width: 60%;
+    border: 2px solid rgba(57, 107, 187, 0.5);
+    display: block;
+    margin: 20px auto;
+}
+
+.projectInfoDescription{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+.projectInfoButton{
+    font-size: 1.2em;
+    margin: 24px auto 0 auto;
+}
+
+.projectSectionsContain{
+    overflow-y: hidden;
+}
+
+.projectItemImgOver:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .projectTitle{
+        padding-top: 60px;
+        font-size: 3.5em;
+    }
+
+    .projectParagraph{
+        font-size: 1.1em;
+    }
+
+
+    .projectInfoDiv{
+        width: 60vw;
+    }
+
+    .projectInfoTitle{
+        padding-top: 50px;
+    }
+
+    .projectInfoDescription{
+
+        width: 70%;
+        margin-bottom: 40px;
+        font-size: 1.1em;
+    }
+
+    .projectInfoImg{
+        margin-top: 40px;
+    }
+
+    .projectSectionsContain{
+        width: 90%;
+        margin: 50px auto;
+        padding-bottom: 100px;
+    }
+
+    .projectSection{
+        display: inline-flex;
+    }
+
+    .projectItemContain{
+        width: 31%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .projectMore{
+        display: none;
+    }
+
+    .projectItemImgOverTitle{
+        font-size: 2.5em;
+    }
+
+   .projectItem{
+       margin: 10px 10%;
+       width: 80%;
+   }
+
+   .projectItemImg{
+       width: 100%;
+   }
+
+   .projectItemDesc{
+       width: 86%;
+       margin-left: 7%;
+       margin-right: 7%;
+       font-size: 1em;
+   }
+
+   .projectItemImgOver{
+       width: 100%;
+   }
+
+   .mainProjectSection{
+       margin-bottom: 20px;
+   }
+}
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 930px) {
+
+    .projectIIOCalculator{
+        font-size: 0.8em;
+    }
+
+    .projectIIOWiki-API{
+        font-size: 0.8em;
+    }
+
+    .projectItemImgOverTitle{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 930px) and (max-width: 1190px) {
+
+
+    .projectIIOCalculator{
+        font-size: 0.9em;
+    }
+
+    .projectIIOWiki-API{
+        font-size: 0.9em;
+    }
+}
+
+
+@media only screen and (min-width: 1190px) {
+
+    .projectItemImgOverTitle{
+        font-size: 2.8em;
+    }
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+
+
+    .projectItemImgOverTitle{
+        font-size: 3.4em;
+    }
+}
+
+
+

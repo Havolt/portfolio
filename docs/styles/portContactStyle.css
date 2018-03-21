@@ -1,0 +1,180 @@
+.contactDiv{
+    background: #f8f8f8;
+    position: relative;
+    overflow-y: auto;
+}
+
+.contactContain{
+    width: 86%;
+    margin: 40px auto 50px auto;  
+}
+
+.contactIcon{
+    font-size: 5em;
+    color: rgb(73, 73, 73);
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.contactTitle{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.contactPara{
+    text-align: center;
+    font-size: 0.9em;
+    color: rgb(58, 58, 58);
+}
+
+.contactButton{
+    margin: 40px auto 0 auto;
+    padding: 4px 30px;
+}
+
+.contactContainBlue{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: rgb(57, 107, 187);
+    color: white;
+}
+
+.ccBlueCross{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    font-size: 1.6em;
+}
+
+.ccBlueCross:hover{
+    color: #444;
+    text-shadow: 0 0 1px #eee;
+    cursor: pointer;
+}
+
+.ccBlueTitle{
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin: 40px auto 0 auto;
+}
+
+.ccBlueName{
+    position: relative;
+    border: 2px solid #444;
+    width: 80%;
+    margin: 20px auto 10px auto;
+    display: block;
+    height: 30px;
+    text-indent: 4px;
+}
+
+.ccBlueEmail{
+    position: relative;
+    border: 2px solid #444;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    display: block;
+    height: 30px;
+    text-indent: 4px;
+}
+
+.ccBlueText{
+    position: relative;
+    border: 2px solid #444;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    display: block;
+    padding-top: 4px;
+    height: 91px;
+    resize: none;
+    padding-left: 2px;
+}
+
+.ccBlueSubmit{
+    font-size: 1.6em;
+    margin: 20px auto 0 auto;
+    display: block;
+    padding: 2px 20px;
+    background: rgb(93, 146, 231);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.ccBlueSubmit:hover{
+    background: #1953AE;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .contactContain{
+        padding-bottom: 50px;
+    }
+
+    .contactIcon{
+        margin-top: 60px;
+        font-size: 6.5em;
+    }
+
+    .contactTitle{
+        font-size: 2em;
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+
+    .contactPara{
+        font-size: 1.1em;
+    }
+
+    .contactButton{
+        margin: 60px auto 0px auto;
+        padding: 5px 32px;
+        font-size: 2em;
+    }
+
+    .ccBlueCross{
+        font-size: 2em;
+    }
+    
+    .ccBlueTitle{
+        font-size: 1.6em;
+        width: 50%;
+        margin: 40px auto 0 auto;
+    }
+    
+    .ccBlueName{
+        font-size: 1.4em;
+        width: 60%;
+        margin: 20px auto 10px auto;
+        height: 40px;
+    }
+    
+    .ccBlueEmail{
+        font-size: 1.4em;
+        width: 60%;
+        margin: 0 auto 10px auto;
+        height: 40px;
+    }
+    
+    .ccBlueText{
+        width: 60%;
+        margin: 0 auto 10px auto;
+        height: 140px;
+        font-size: 1.4em;
+    }
+    
+    .ccBlueSubmit{
+        font-size: 2em;
+        padding: 4px 22px;
+    }
+
+ }
