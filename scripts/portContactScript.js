@@ -36,7 +36,7 @@ function setFormData(){
     creEl('div', 'contactContain', 'contactDiv', 0);
     creEl('div','contactIcon', 'contactContain', 0, '<i class="fa fa-envelope-square"></i>')
     creEl('div', 'contactTitle', 'contactContain', 0, 'Interestested in hiring me?');
-    creEl('div', 'contactPara', 'contactContain', 0, "I am currently looking for new work and would be very interested to hear about your open positions. Please get in touch with me below.")
+    creEl('div', 'contactPara', 'contactContain', 0, "I am currently looking for new work and would be very interested to hear about your open positions. Please get in touch with me by using the button below.")
     creEl('div', ['portButton','contactButton'], 'contactContain', 0, 'Contact Me');
 
     creEl('div', 'contactContainBlue', 'contactDiv', 0);
@@ -59,6 +59,21 @@ function setFormData(){
     document.getElementsByClassName('ccBlueCross')[0].addEventListener('click', function(){
         if(contactData.ccBlueTopMove){
             showContact(document.getElementsByClassName('contactContainBlue')[0]);
+        }
+    })
+    document.getElementsByClassName('ccBlueSubmit')[0].addEventListener('click', function(event){
+
+        if(document.getElementsByClassName('ccBlueName')[0].value.length < 1){
+            event.preventDefault();
+            document.getElementsByClassName('ccBlueName')[0].style.border="#d31717 2px solid";
+        }
+        if(document.getElementsByClassName('ccBlueEmail')[0].value.length < 1){
+            event.preventDefault();
+            document.getElementsByClassName('ccBlueEmail')[0].style.border="#d31717 2px solid";
+        }
+        if(document.getElementsByClassName('ccBlueText')[0].value.length < 1){
+            event.preventDefault();
+            document.getElementsByClassName('ccBlueText')[0].style.border="#d31717 2px solid";
         }
     })
 })()
