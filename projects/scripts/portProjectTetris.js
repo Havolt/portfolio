@@ -674,25 +674,25 @@ function createShapeDataCaller(obj){
                                                 /////Audio Section/////
 
     function rotateSound(){
-        let rotateSE = new Audio('sounds/rotate.wav');
+        let rotateSE = new Audio('projects/sounds/rotate.wav');
         rotateSE.volume = 0.15;
         rotateSE.play();
     }
     
     function clearLineSound(){
-        let clearLineSE = new Audio('sounds/clearLine.wav');
+        let clearLineSE = new Audio('projects/sounds/clearLine.wav');
         clearLineSE.volume = 0.15;
         clearLineSE.play();
     }
 
     function gameOverSound(){
-        let gameOverSE = new Audio('sounds/gameOver.flac');
+        let gameOverSE = new Audio('projects/sounds/gameOver.flac');
         gameOverSE.volume = 0.1;
         gameOverSE.play();
     }
 
     function pauseGameSound(){
-        let pauseGameSE = new Audio('sounds/pause.wav');
+        let pauseGameSE = new Audio('projects/sounds/pause.wav');
         pauseGameSE.volume = 0.2;
         pauseGameSE.play();
     }

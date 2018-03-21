@@ -28,15 +28,21 @@
         display: block;
         font-size: 1.2em;
         background-color: #4578cc;
-        border: 1px solid #4578cc;
+        border-right: 2px solid #2051a0;
+        border-bottom: 2px solid #2051a0;
+        border-left: 2px solid #6388c2;
+        border-top: 2px solid #6388c2;
         color: white;
         border-radius: 4px;
-        padding: 2px 0;
+        padding: 3px 0;
       }
   
       #randomButton:hover{
         background-color: #ffab3d;
-        border: 1px solid #d69b5c;
+        border-left: 2px solid #bb772e;
+        border-top: 2px solid #bb772e;
+        border-right: 2px solid #e2ac72;
+        border-bottom: 2px solid #e2ac72;
         cursor: pointer;
       }
   
@@ -46,14 +52,20 @@
         height: 100%;
         background-color: #4578cc;
         color: white;
-        border: 2px solid #4578cc;
+        border-right: 2px solid #2051a0;
+        border-bottom: 2px solid #2051a0;
+        border-left: 2px solid #6388c2;
+        border-top: 2px solid #6388c2;
         cursor: pointer;
         width: 18%;
       }
   
       #searchButton:hover{
         background-color: #ffab3d;
-        border: 2px solid #d69b5c;
+        border-left: 2px solid #bb772e;
+        border-top: 2px solid #bb772e;
+        border-right: 2px solid #e2ac72;
+        border-bottom: 2px solid #e2ac72;
       }
   
       #searchBar{
@@ -61,7 +73,6 @@
         width: 80%;
         border: 1px solid #96beff;
         float: left;
-        border-radius: 2%;
         font-size: 1.8em;
         padding-left: 2px;
       }
@@ -76,17 +87,17 @@
       }
   
       .listItemClass{
+        padding: 8px 0;
         width: 100%;
-        border-radius: 1%;
-        border: 2px solid #96beff;
+        border-radius: 4px;
+        border: 2px solid #69a2ff;
         margin-bottom: 5px;
-        background-color: #f7f7f7;
+        background-color: white;
       }
   
       .listItemClass:hover{
         cursor: pointer;
         box-shadow: 0px 0px 10px #ffab3d;
-        background-color: white;
         border: 2px solid #ffab3d;
       }
   

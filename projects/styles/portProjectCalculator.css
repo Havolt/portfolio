@@ -6,10 +6,13 @@ body, html{
   #app{
     width: 480px;
     border-radius: 5%;
-    background-color: #282828;
+    background-color: #2e2e2e;
     padding-top: 26px;
     margin: 60px auto 0 auto;
-    border: 4px solid #1a1a3d;
+    border-right: 4px solid #1a1a3d;
+    border-bottom: 4px solid #1a1a3d;
+    border-top: 4px solid #464646;
+    border-left: 4px solid #464646;
     position: relative;
   }
 
@@ -67,6 +70,7 @@ body, html{
     margin: 10px 4px;
     color: white;
     background-color: #686868;
+    border-radius: 5px;
   }
   
   button:hover{
