@@ -18,9 +18,9 @@ function moveStars(size){
         let nextXPos = document.getElementsByClassName('intStar'+size)[i].style.left;
         nextXPos = nextXPos.split('%')[0];
         if(nextXPos < 0){nextXPos = 101}
-        if(size == 'Small'){nextXPos -= 0.1;}
-        if(size == 'Medium'){nextXPos -= 0.2;}
-        if(size == 'Large'){nextXPos -= 0.4;}
+        if(size == 'Small'){nextXPos -= 0.04;}
+        if(size == 'Medium'){nextXPos -= 0.08;}
+        if(size == 'Large'){nextXPos -= 0.12;}
         document.getElementsByClassName('intStar'+size)[i].style.left = nextXPos + '%';
     }
 }
@@ -46,7 +46,7 @@ function moveAll(){
     moveStars('Small');
     moveStars('Medium');
     moveStars('Large');
-    setTimeout(function(){moveAll()}, 180)
+    setTimeout(function(){moveAll()}, 90)
 }
 
 //transforms the arrow and by doing so gives the illusion of rotation
