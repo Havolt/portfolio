@@ -44,6 +44,10 @@
     background: url("../images/proj-snake.png");
 }
 
+.projectItemImgPlatformer{
+    background: url("../images/proj-platformer.png");
+}
+
 .projectItemImg{
     width: 100%;
     height: auto;
@@ -231,6 +235,7 @@
 
     .projectSection{
         display: inline-flex;
+        width: 100%;
     }
 
     .projectItemContain{
@@ -288,9 +293,15 @@
         font-size: 0.9em;
     }
 
+    .projectIIOPlatformer{
+        font-size: 0.8em;
+    }
+
     .projectItemImgOverTitle{
         font-size: 2em;
     }
+
+   
     
 }
 

@@ -1,6 +1,7 @@
 
 creEl('canvas', 'gc', 'main', 0, '', 'gc');
 
+let platfromerData = {name: 'Platformer'};
 
 let gc = document.getElementById('gc');
 let ctx = gc.getContext('2d');
@@ -398,6 +399,7 @@ document.addEventListener('keyup', function(e){
 
 
 window.onload = function(){
+    underlineLink(platfromerData.name);
     initApp();
 }
 

@@ -68,7 +68,7 @@
     
 }
 
-@media only screen and (max-width: 729px) {
+@media only screen and (max-width: 814px) {
 
 .headerLinksContain{
     position: absolute;
@@ -80,7 +80,7 @@
 }
 
 
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 815px) {
 
     .headerBars{
         display: none;

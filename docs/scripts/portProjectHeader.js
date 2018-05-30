@@ -65,6 +65,7 @@ function addLinkEvents(arr, links){
     linkMaker('Calculator');
     linkMaker('Wiki-API');
     linkMaker('Snake');
+    linkMaker('Platformer');
 
     addLinkEvents(linkData, document.getElementsByClassName('headerLink'));
 

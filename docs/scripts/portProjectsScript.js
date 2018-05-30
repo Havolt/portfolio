@@ -81,6 +81,9 @@ function addProjectFunctions(divs){
             else if(i == 6){
                 addProjectInHL('Snake', 'proj-snake.png', 'The classic game of snake remade in JavaScript. Snake follows the rules of the classic game where the player has to collect food to grow bigger while the game gets quicker. Control the snake with the arrow keys on your keyboard.', 'snake.html');
             }
+            else if(i == 7){
+                addProjectInHL('Platformer', 'proj-platformer.png', 'This is a simple 2d platformer which currently has three levels. It utilizes the arrow keys to move the character and space bar to jump. It requires a desktop size screen to play.', 'platformer.html');
+            }
         })
     }
 }
@@ -111,15 +114,18 @@ function projectLinkButtons(lnk){
 
     //Main projects section
     creProjectItem('mainProjectSection', 0, 'Tetris',  '<i class="fa fa-th-large"></i>', 'This is the classic video game tetris re-made entirely in vanilla JavaScript. It contains multiple features such as varying difficulty levels, score system etc.');
-    creProjectItem('mainProjectSection', 1, 'NC-Creepy', '<i class="fa fa-reddit"></i>', 'Creepy story generator that utilized the Reddit API to provide the user with a different story each time they press a button.' )
+    creProjectItem('mainProjectSection', 1, 'NC-Creepy', '<i class="fab fa-reddit"></i>', 'Creepy story generator that utilized the Reddit API to provide the user with a different story each time they press a button.' )
     creProjectItem('mainProjectSection', 2, 'To-Do', '<i class="fa fa-calendar"></i>', 'A To-Do list written in pure JavaScript. This app allows the user to create items, favourite them, delete them and allows the user to cycle between different display options.');
 
     
     //Secondary projects section
-    creProjectItem('secondProjectSection', 3, 'Checkers', '<i class="fa fa-delicious"></i>', 'My own version of Checkers created using vanilla JavaScript. It contains most of the offical rules of checkers including mandatory takes and multi-takes.' );
-    creProjectItem('secondProjectSection', 4, 'Wiki-API', '<i class="fa fa-wikipedia-w"></i>', 'This is my Wikipedia search engine which utilizes the wikipedia API to bring the user back their results.');
+    creProjectItem('secondProjectSection', 3, 'Checkers', '<i class="fab fa-delicious"></i>', 'My own version of Checkers created using vanilla JavaScript. It contains most of the offical rules of checkers including mandatory takes and multi-takes.' );
+    creProjectItem('secondProjectSection', 4, 'Wiki-API', '<i class="fab fa-wikipedia-w"></i>', 'This is my Wikipedia search engine which utilizes the wikipedia API to bring the user back their results.');
     creProjectItem('secondProjectSection', 5, 'Calculator', '<i class="fa fa-calculator"></i>', 'A calculator with multiple features including the ability to display previous inputs and to string together numerous commands into a single equation.')
+    
+    //Third projects section
     creProjectItem('thirdProjectSection', 6, 'Snake', '<i class="fa fa-gamepad"></i>', 'A remake of the classic phone game snake. Snake utilizes keyboard controls and all the rules of the classic game.')
+    creProjectItem('thirdProjectSection', 7, 'Platformer', '<i class="fa fa-shoe-prints"></i>', 'A 2D platformer in which the user must jump his way to victory;' );
 
     creEl('div', 'projectMore', 'projectDiv', 0);
     creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'Show More');
