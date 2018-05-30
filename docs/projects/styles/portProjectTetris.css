@@ -89,7 +89,7 @@ body{
     display: inline-block;
     vertical-align: top;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .previewBlockTitle{
@@ -312,11 +312,7 @@ body{
 
 
     .tetrisBoard{
-        margin-left: 55px;
-    }
-
-    .statsContain{
-        margin-left: 10px;
+        margin-left: 25px;
     }
 
     .stats{
@@ -333,7 +329,7 @@ body{
     }
 
     .statsContain{
-        margin-left: 50px;
+        margin-left: 5px;
     }
 
 }
