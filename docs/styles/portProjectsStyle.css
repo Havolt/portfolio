@@ -20,6 +20,10 @@
     background: url("../images/proj-tetris.png");
 }
 
+.projectItemImgNC-Creepy{
+    background: url("../images/proj-nocontext.png");
+}
+
 .projectItemImgCheckers{
     background: url("../images/proj-checkers.png");
 }
@@ -280,9 +284,14 @@
         font-size: 0.8em;
     }
 
+    .projectIIONC-Creepy{
+        font-size: 0.9em;
+    }
+
     .projectItemImgOverTitle{
         font-size: 2em;
     }
+    
 }
 
 @media only screen and (min-width: 930px) and (max-width: 1190px) {
@@ -293,6 +302,10 @@
     }
 
     .projectIIOWiki-API{
+        font-size: 0.9em;
+    }
+
+    .projectIIONC-Creepy{
         font-size: 0.9em;
     }
 }
