@@ -21,7 +21,7 @@ function fadeInfo(bool){
     }else{ 
         projectData.fadeDir = -projectData.fadeDir; 
         projectData.fadeAmt = projectData.fadeAmt + projectData.fadeDir
-        if(bool){document.getElementsByClassName('projectDarken')[0].classList.add('hidden')}    
+        if(bool){document.getElementsByClassName('projectDarken')[0].classList.add('hiddenCreep')}    
     }
 }
 
@@ -30,11 +30,11 @@ function toggleHidden(darkDiv){
     projectData.projectInfoExist = !projectData.projectInfoExist;
     let foundClass = false;
     for(let i = 0; i < darkDiv.classList.length; i++){
-        if(darkDiv.classList[i] == 'hidden'){
+        if(darkDiv.classList[i] == 'hiddenCreep'){
             foundClass = true;
         }
     }
-    if(foundClass){darkDiv.classList.remove('hidden'); fadeInfo()}
+    if(foundClass){darkDiv.classList.remove('hiddenCreep'); fadeInfo()}
     else{fadeInfo(true);}
 }
 
@@ -106,8 +106,8 @@ function projectLinkButtons(lnk){
     creEl('div', 'projectSectionsContain', 'projectDiv', 0);
 
     creEl('div', ['mainProjectSection', 'projectSection'], 'projectSectionsContain', 0);
-    creEl('div', ['secondProjectSection', 'projectSection', 'hidden'], 'projectSectionsContain', 0);
-    creEl('div', ['thirdProjectSection', 'projectSection', 'hidden'], 'projectSectionsContain', 0);
+    creEl('div', ['secondProjectSection', 'projectSection', 'hiddenCreep'], 'projectSectionsContain', 0);
+    creEl('div', ['thirdProjectSection', 'projectSection', 'hiddenCreep'], 'projectSectionsContain', 0);
 
     //Main projects section
     creProjectItem('mainProjectSection', 0, 'Tetris',  '<i class="fa fa-th-large"></i>', 'This is the classic video game tetris re-made entirely in vanilla JavaScript. It contains multiple features such as varying difficulty levels, score system etc.');
@@ -124,7 +124,7 @@ function projectLinkButtons(lnk){
     creEl('div', 'projectMore', 'projectDiv', 0);
     creEl('div', ['portButton','projectMoreButton'], 'projectMore', 0, 'Show More');
 
-    creEl('div', ['projectDarken', 'hidden'], 'site', 0);
+    creEl('div', ['projectDarken', 'hiddenCreep'], 'site', 0);
     creEl('div', 'projectInfoDiv', 'projectDarken', 0);
     creEl('div', 'projectInfoCross', 'projectInfoDiv', 0, '<i class="fa fa-times"></i>');
     creEl('div', 'projectInfoTitle', 'projectInfoDiv', 0);
@@ -139,10 +139,13 @@ function projectLinkButtons(lnk){
     document.getElementsByClassName('projectMoreButton')[0].addEventListener('click', function(){
 
         if(projectData.showingMore){
-            
+            document.querySelector('.projectMoreButton').innerHTML = 'Show More';
             window.scrollTo(0, window.scrollY - document.getElementsByClassName('secondProjectSection')[0].offsetHeight);
+        }else{
+            document.querySelector('.projectMoreButton').innerHTML = 'Show Less';
         }
         hideDiv('secondProjectSection', 0);
+        hideDiv('thirdProjectSection', 0);
         projectData.showingMore = !projectData.showingMore;
 
     })

@@ -1,7 +1,7 @@
 
 let headerData = {barsOn : false}
 
-let linkData = [{name: 'Tetris', link: 'tetris.html'}, {name: 'Checkers', link: 'checkers.html'},{name: 'To-do', link: 'todo.html'},{name: 'Calculator', link: 'calculator.html'},{name: 'Wiki-API', link: 'wikiApi.html'},{name: 'Snake', link: 'snake.html'}]
+let linkData = [{name: 'Tetris', link: 'tetris.html'}, {name: 'NC-Creepy', link: 'nocontext.html'}, {name: 'Checkers', link: 'checkers.html'},{name: 'To-do', link: 'todo.html'},{name: 'Calculator', link: 'calculator.html'},{name: 'Wiki-API', link: 'wikiApi.html'},{name: 'Snake', link: 'snake.html'}]
 
 function linkMaker(linkName, lastLinkBool){
     creEl('div', ['headerLink', 'headerLink'+linkName], 'headerLinksContain', 0, linkName  )
@@ -59,6 +59,7 @@ function addLinkEvents(arr, links){
     })
 
     linkMaker('Tetris')
+    linkMaker('NC-Creepy');
     linkMaker('Checkers');
     linkMaker('To-do');
     linkMaker('Calculator');
