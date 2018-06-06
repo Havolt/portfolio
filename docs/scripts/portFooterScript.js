@@ -2,7 +2,7 @@
 //creates the links to external websites in the footer
 function createFooterLink(linkName,  inHL, linkDestination){
     creEl('div', ['footerLink', 'footerLink'+ linkName], 'footerLinksDiv', 0);
-    creEl('div', ['footerLinkIcon', 'footerLinkIcon'+linkName], 'footerLink'+ linkName, 0, '<i class="fa fa-'+inHL+'"></i>');
+    creEl('div', ['footerLinkIcon', 'footerLinkIcon'+linkName], 'footerLink'+ linkName, 0, '<i class="fab fa-'+inHL+'"></i>');
     openWebPage('footerLink'+linkName, 0, linkDestination)
 }
 
